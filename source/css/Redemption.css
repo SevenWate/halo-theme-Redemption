@@ -65,35 +65,35 @@ main .post {
   width: 45rem;
   padding-top: 1rem;
 }
-main .post h1 a {
+main .post > h1 a {
   letter-spacing: 0.0625rem;
   font-size: 1.375rem;
   line-height: 1.75rem;
 }
-main .post p {
+main .post > p {
   line-height: 1.5rem;
   text-indent: 2rem;
 }
-main .post .info {
+main .post > .info {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 0.5rem 0 2rem 0;
 }
-main .post .info span {
+main .post > .info span {
   font-weight: 400;
   font-size: 0.75rem;
 }
-main .post .info a {
+main .post > .info a {
   font-size: 0.75rem;
 }
-main .post .info .date,
-main .post .info .tag {
+main .post > .info .date,
+main .post > .info .tag {
   margin: 0 0.5rem;
 }
-main .post .info .date i,
-main .post .info .tag i {
+main .post > .info .date i,
+main .post > .info .tag i {
   position: relative;
   top: 0.05rem;
 }
@@ -102,9 +102,45 @@ main .pagenav {
   justify-content: space-between;
   padding: 2rem 0 5rem 0;
 }
-main .pagenav a {
+main .pagenav > a {
   text-decoration: none;
   margin: 0 2rem;
+}
+main .archives {
+  width: 45rem;
+  padding-top: 1rem;
+  font-size: 0.875rem;
+}
+main .archives > li {
+  list-style-type: none;
+  padding: 0;
+}
+main .archives > .year {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
+  padding: 0.625rem 0;
+}
+main .archives > .list {
+  margin-bottom: 3rem;
+  line-height: 1.75rem;
+}
+main .archives > .list .title {
+  padding-bottom: 0.3rem;
+}
+main .archives > .list .title a {
+  display: inline-block;
+  width: 85%;
+  color: #1f1f1f;
+}
+main .archives > .list .title .time {
+  float: right;
+  color: #c5c5c5;
+  font-size: 0.875rem;
+}
+main .archives > .list .title a:hover {
+  color: #1f1f1f;
 }
 
 footer {

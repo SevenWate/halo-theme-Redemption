@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="${theme_base!}/source/css/redemption.css"/>
     </head>
     <body class="animate__animated animate__fadeInDown">
-    <#--  <#include "menu.ftl">  -->
+    <#include "menu.ftl">
 
     <#--  主体  -->
     <#nested >

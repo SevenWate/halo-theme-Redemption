@@ -63,7 +63,7 @@ body {
 main {
     background: #ffffff;
     box-shadow: 0 0.375rem 1rem -0.5rem rgba(0, 0, 0, 0.08);
-
+    // 首页
     .post {
         h1 {
             a {
@@ -96,7 +96,7 @@ main {
             }
         }
     }
-
+    // 文章分页
     .pagenav {
         border-bottom: 1px solid #f2f2f2;
 
@@ -107,6 +107,24 @@ main {
                 color: rgb(0, 0, 0, 0.65);
             }
         }
+    }
+    // 归档页面
+    .archives > {
+        .list {
+            .title{
+                a {
+                    color: rgb(0, 0, 0);
+        
+                    &:hover {
+                        color: rgb(0, 0, 0, 0.65);
+                    }
+                }
+                .time {
+                    color: #c5c5c5;
+                }
+            }
+        }
+
     }
 }
 
@@ -123,3 +141,5 @@ footer {
         }
     }
 }
+
+// 

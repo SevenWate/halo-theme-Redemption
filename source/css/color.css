@@ -70,6 +70,15 @@ main .pagenav a {
 main .pagenav a:hover {
   color: rgba(0, 0, 0, 0.65);
 }
+main .archives > .list .title a {
+  color: black;
+}
+main .archives > .list .title a:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+main .archives > .list .title .time {
+  color: #c5c5c5;
+}
 
 footer .copyright a {
   color: rgba(0, 0, 0, 0.25);

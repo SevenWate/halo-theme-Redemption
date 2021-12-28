@@ -1,48 +1,20 @@
 <#include "module/macro.ftl">
 <@layout title="归档 - ${blog_title!}">
-    <h1>归档</h1>
-    <ul>
-        <#list archives as archive>
-            <h2>${archive.year?c}</h2>
-            <#list archive.posts as post>
-                <li>
-                    <a href="${post.fullPath!}">${post.title!}</a>
-                </li>
+    <main>
+        <#include "module/header.ftl">
+        <div class="archives">
+            <#list archives as archive>
+                <div class="year">${archive.year?c}</div>
+                <div class="list">
+                    <#list archive.posts?sort_by("createTime")?reverse as post>
+                        <div class="title">
+                            <a href="${post.fullPath!}">${post.title!}</a>
+                            <div class="time"><span class="date">${post.createTime?string('MM-dd')}</span></div>
+                        </div>
+                    </#list>
+                </div>
             </#list>
-        </#list>
-    </ul>
-
-    <h1>分页</h1>
-
-    <#if posts.totalPages gt 1>
-        <ul>
-            <@paginationTag method="archives" page="${posts.number}" total="${posts.totalPages}" display="3">
-                <#if pagination.hasPrev>
-                    <li>
-                        <a href="${pagination.prevPageFullPath!}">
-                            上一页
-                        </a>
-                    </li>
-                </#if>
-                <#list pagination.rainbowPages as number>
-                    <li>
-                        <#if number.isCurrent>
-                            <span class="current">第 ${number.page!} 页</span>
-                        <#else>
-                            <a href="${number.fullPath!}">第 ${number.page!} 页</a>
-                        </#if>
-                    </li>
-                </#list>
-                <#if pagination.hasNext>
-                    <li>
-                        <a href="${pagination.nextPageFullPath!}">
-                            下一页
-                        </a>
-                    </li>
-                </#if>
-            </@paginationTag>
-        </ul>
-    <#else>
-        <span>当前只有一页</span>
-    </#if>
+        </div>
+        <#include "module/pagination.ftl">
+    </main>
 </@layout>
