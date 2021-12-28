@@ -1,0 +1,79 @@
+html {
+  background-color: #f5f5f5;
+  color: #1f1f1f;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #0000000d;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #00000026;
+}
+
+::selection {
+  background: #0095ff1a;
+}
+
+body {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .title a span {
+  color: black;
+}
+.header .title a span:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+.header .description {
+  color: rgba(0, 0, 0, 0.65);
+}
+.header .description .socials a {
+  color: rgba(0, 0, 0, 0.65);
+}
+.header .description .socials a:hover {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+main {
+  background: #ffffff;
+  box-shadow: 0 0.375rem 1rem -0.5rem rgba(0, 0, 0, 0.08);
+}
+main .post h1 a {
+  color: black;
+}
+main .post p {
+  color: rgba(0, 0, 0, 0.85);
+}
+main .post .info {
+  border-bottom: 1px solid #f3f3f3;
+}
+main .post .info span {
+  color: rgba(0, 0, 0, 0.65);
+}
+main .post .info a {
+  color: rgba(0, 0, 0, 0.65);
+}
+main .post .info .date i,
+main .post .info .tag i {
+  color: rgba(0, 0, 0, 0.85);
+}
+main .pagenav {
+  border-bottom: 1px solid #f2f2f2;
+}
+main .pagenav a {
+  color: black;
+}
+main .pagenav a:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+footer .copyright a {
+  color: rgba(0, 0, 0, 0.25);
+}
+footer .copyright a:hover {
+  color: rgba(0, 0, 0, 0.85);
+}

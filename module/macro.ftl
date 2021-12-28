@@ -1,38 +1,34 @@
 <#macro layout title>
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="${meta_keywords!}"/>
-    <meta name="description" content="${meta_description!}" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>${title}</title>
+        <meta name="keywords" content="${meta_keywords!}"/>
+        <meta name="description" content="${meta_description!}" />
+        <@global.head />
 
-    <#--
-        公共 head 代码，详情请参考：https://docs.halo.run/zh/developer-guide/theme/public-template-tag
-        包含：Favicon，自定义 head 等
-    -->
+        <link rel="stylesheet" href="${theme_base!}/source/css/normalize.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
+        <link rel="stylesheet" href="${theme_base!}/source/css/color.css"/>
+        <link rel="stylesheet" href="${theme_base!}/source/css/redemption.css"/>
+    </head>
+    <body class="animate__animated animate__fadeInDown">
+    <#--  <#include "menu.ftl">  -->
 
-    <@global.head />
+    <#--  主体  -->
+    <#nested >
 
-    <title>${title}</title>
-
-    <#--  
-        样式 CSS 代码
-    -->
-    <link rel="stylesheet" href="${theme_base!}/source/css/normalize.css"/>
-    <link rel="stylesheet" href="${theme_base!}/source/css/animate.min.css"/>
-    <link rel="stylesheet" href="${theme_base!}/source/css/main.css"/>
-</head>
-<body>
-<#include "menu.ftl">
-
-<#nested >
-
-<#--
-    公共底部代码，详情请参考：https://docs.halo.run/zh/developer-guide/theme/public-template-tag
-    包含：统计代码，底部信息
--->
-<@global.footer />
-</body>
+        <footer>
+            <div class="copyright">
+                <a href="https://zeuk.me">Designed by Zeuk,</a>
+                <a href="https://halo.run">Proudly published with Halo</a>
+            </div>
+            <@global.footer />
+        </footer>
+    </body>
 </html>
 </#macro>
 
