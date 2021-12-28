@@ -14,6 +14,13 @@
     <@global.head />
 
     <title>${title}</title>
+
+    <#--  
+        样式 CSS 代码
+    -->
+    <link rel="stylesheet" href="${theme_base!}/source/css/normalize.css"/>
+    <link rel="stylesheet" href="${theme_base!}/source/css/animate.min.css"/>
+    <link rel="stylesheet" href="${theme_base!}/source/css/main.css"/>
 </head>
 <body>
 <#include "menu.ftl">
