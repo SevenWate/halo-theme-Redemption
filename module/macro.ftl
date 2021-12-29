@@ -9,9 +9,12 @@
         <meta name="description" content="${meta_description!}" />
         <@global.head />
 
-        <link rel="stylesheet" href="${theme_base!}/source/css/normalize.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"/>
+        <link rel="stylesheet" href="${theme_base!}/source/plugins/normalize.css"/>
+        <link rel="stylesheet" href="${theme_base!}/source/plugins/animate.css"/>
+        <link rel="stylesheet" href="${theme_base!}/source/plugins/remixicon/remixicon.css"/>
+        <#--  <link rel="stylesheet" href="${theme_base!}/source/plugins/typo.css"/>  -->
+        <#--  <link rel="stylesheet" href="${theme_base!}/source/plugins/han.css"/>  -->
+        <#--  <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/color.css"/>
         <link rel="stylesheet" href="${theme_base!}/source/css/redemption.css"/>
     </head>
@@ -28,6 +31,13 @@
             </div>
             <@global.footer />
         </footer>
+
+        <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
+
+        <script>
+        const heti = new Heti('.heti');
+        heti.autoSpacing();
+        </script>
     </body>
 </html>
 </#macro>

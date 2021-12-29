@@ -1,7 +1,7 @@
 <#include "module/macro.ftl">
 <@layout title="${post.title!} - ${blog_title!}">
     <h1>${post.title!}</h1>
-    <article>
+    <article class="heti">
         ${post.formatContent!}
     </article>
     <#include "module/comment.ftl">

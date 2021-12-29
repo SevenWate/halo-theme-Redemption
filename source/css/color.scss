@@ -108,12 +108,12 @@ main {
             }
         }
     }
-    // 归档页面
-    .archives > {
+    // 归档页面,类别页面
+    .archives,.category{
         .list {
-            .title{
+            .post-title{
                 a {
-                    color: rgb(0, 0, 0);
+                    color: rgb(0, 0, 0.85);
         
                     &:hover {
                         color: rgb(0, 0, 0, 0.65);
@@ -125,6 +125,24 @@ main {
             }
         }
 
+    }
+
+    // 标记页面
+    .tags {
+        ul {
+            li{
+                a{
+                    color: rgb(0, 0, 0.85);
+        
+                    &:hover {
+                        color: rgb(0, 0, 0, 0.65);
+                    }
+                }
+            }
+        }
+        .count {
+            color: #c5c5c5;
+        }
     }
 }
 
@@ -141,5 +159,3 @@ footer {
         }
     }
 }
-
-// 

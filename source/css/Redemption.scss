@@ -137,51 +137,68 @@ main {
         }
     }
 
-    .archives{
+    .archives,.category,tags{
         width: 45rem;
         padding-top: 1rem;
         font-size: 0.875rem;
     }
-    .archives > {
+
+    .archives,.category{
         li {
             list-style-type: none;
             padding: 0;
         }
 
-        .year {
+        .title {
             font-size: 1.4rem;
-            font-weight: 600;
+            font-weight: bold;
             line-height: 2.2rem;
-            letter-spacing: 0.1rem;
             padding: 0.625rem 0;
         }
 
         .list {
             margin-bottom: 3rem;
-            line-height: 1.75rem;
 
-            .title{
+            .post-title{
                 padding-bottom: 0.3rem;
+                line-height: 1.75rem;
 
                 a {
                     display: inline-block;
                     width: 85%;
-                    color: #1f1f1f;
                 }
-
                 .time {
                     float: right;
-                    color: #c5c5c5;
                     font-size: 0.875rem;
-                }
-
-                a:hover {
-                    color: #1f1f1f;
                 }
             }
         }
 
     }
+    .tags {
+        text-align: center;
+        margin: 4rem 0;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    
+        ul li {
+            margin: 0.5rem 1rem;
+            display: inline-block;
+            font-size: 1rem;
+        }
+    
+        .count {
+            display: inline-block;
+            position: relative;
+            top: -8px;
+            right: -2px;
+            font-size: 12px;
+        }
+    }
+
 }
 
 footer {

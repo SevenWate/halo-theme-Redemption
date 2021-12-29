@@ -106,41 +106,55 @@ main .pagenav > a {
   text-decoration: none;
   margin: 0 2rem;
 }
-main .archives {
+main .archives, main .category, main tags {
   width: 45rem;
   padding-top: 1rem;
   font-size: 0.875rem;
 }
-main .archives > li {
+main .archives li, main .category li {
   list-style-type: none;
   padding: 0;
 }
-main .archives > .year {
+main .archives .title, main .category .title {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 2.2rem;
-  letter-spacing: 0.1rem;
   padding: 0.625rem 0;
 }
-main .archives > .list {
+main .archives .list, main .category .list {
   margin-bottom: 3rem;
+}
+main .archives .list .post-title, main .category .list .post-title {
+  padding-bottom: 0.3rem;
   line-height: 1.75rem;
 }
-main .archives > .list .title {
-  padding-bottom: 0.3rem;
-}
-main .archives > .list .title a {
+main .archives .list .post-title a, main .category .list .post-title a {
   display: inline-block;
   width: 85%;
-  color: #1f1f1f;
 }
-main .archives > .list .title .time {
+main .archives .list .post-title .time, main .category .list .post-title .time {
   float: right;
-  color: #c5c5c5;
   font-size: 0.875rem;
 }
-main .archives > .list .title a:hover {
-  color: #1f1f1f;
+main .tags {
+  text-align: center;
+  margin: 4rem 0;
+}
+main .tags ul {
+  margin: 0;
+  padding: 0;
+}
+main .tags ul li {
+  margin: 0.5rem 1rem;
+  display: inline-block;
+  font-size: 1rem;
+}
+main .tags .count {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  right: -2px;
+  font-size: 12px;
 }
 
 footer {

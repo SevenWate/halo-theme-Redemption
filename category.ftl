@@ -1,45 +1,33 @@
 <#include "module/macro.ftl">
 <@layout title="分类：${category.name} - ${blog_title!}">
-    <h1>分类：${category.name}</h1>
-    <ul>
-        <#list posts.content as post>
-            <li>
-                <a href="${post.fullPath}">${post.title}</a>
-            </li>
-        </#list>
-    </ul>
-
-    <h1>分页</h1>
-
-    <#if posts.totalPages gt 1>
-        <ul>
-            <@paginationTag method="categoryPosts" page="${posts.number}" total="${posts.totalPages}" display="3" slug="${category.slug!}">
-                <#if pagination.hasPrev>
-                    <li>
-                        <a href="${pagination.prevPageFullPath!}">
-                            上一页
-                        </a>
-                    </li>
-                </#if>
-                <#list pagination.rainbowPages as number>
-                    <li>
-                        <#if number.isCurrent>
-                            <span class="current">第 ${number.page!} 页</span>
-                        <#else>
-                            <a href="${number.fullPath!}">第 ${number.page!} 页</a>
-                        </#if>
-                    </li>
+    <main>
+        <#include "module/header.ftl">
+        <div class="category">
+            <div class="title">分类：${category.name}</div>
+            <div class="list">
+                <#list posts.content as post>
+                    <div class="post-title">
+                        <a href="${post.fullPath!}">${post.title!}</a>
+                        <div class="time"><span class="date">${post.createTime?string('yyyy-MM-dd')}</span></div>
+                    </div>
                 </#list>
-                <#if pagination.hasNext>
-                    <li>
-                        <a href="${pagination.nextPageFullPath!}">
-                            下一页
+            </div>
+        </div>
+            <#if posts.totalPages gt 1>
+                <@paginationTag method="categoryPosts" page="${posts.number}" total="${posts.totalPages}" display="3">
+                    <div class="pagenav">
+                    <#if pagination.hasPrev>
+                        <a href="${pagination.prevPageFullPath!}" class="pre">
+                            返回上页
                         </a>
-                    </li>
-                </#if>
-            </@paginationTag>
-        </ul>
-    <#else>
-        <span>当前只有一页</span>
-    </#if>
+                    </#if>
+                    <#if pagination.hasNext>
+                        <a href="${pagination.nextPageFullPath!}" class="next">
+                            更多文章
+                        </a>
+                    </#if>
+                    </div>
+                </@paginationTag>
+            </#if>
+    </main>
 </@layout>

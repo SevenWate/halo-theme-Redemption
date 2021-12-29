@@ -70,13 +70,22 @@ main .pagenav a {
 main .pagenav a:hover {
   color: rgba(0, 0, 0, 0.65);
 }
-main .archives > .list .title a {
-  color: black;
+main .archives .list .post-title a, main .category .list .post-title a {
+  color: #000001;
 }
-main .archives > .list .title a:hover {
+main .archives .list .post-title a:hover, main .category .list .post-title a:hover {
   color: rgba(0, 0, 0, 0.65);
 }
-main .archives > .list .title .time {
+main .archives .list .post-title .time, main .category .list .post-title .time {
+  color: #c5c5c5;
+}
+main .tags ul li a {
+  color: #000001;
+}
+main .tags ul li a:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+main .tags .count {
   color: #c5c5c5;
 }
 
