@@ -354,3 +354,12 @@
   a {
     text-decoration: none;
   }
+
+  /* 
+   * 去除列表默认样式
+   */
+
+  ul,li{
+    list-style-type: none;
+    padding: 0;
+  }

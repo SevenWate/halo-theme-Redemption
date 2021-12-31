@@ -1,5 +1,5 @@
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinksMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
@@ -32,22 +32,22 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header .title {
+.header > .title {
   width: 6rem;
 }
-.header .title a {
+.header > .title > a {
   font-size: 2.2rem;
   letter-spacing: 0.2rem;
   line-height: 2.4rem;
 }
-.header .description {
+.header > .description {
   font-size: 0.9rem;
 }
-.header .description .socials {
+.header > .description > .socials {
   display: flex;
   justify-content: flex-end;
 }
-.header .description .socials a {
+.header > .description > .socials > a {
   font-size: 1rem;
   margin-left: 0.5rem;
   cursor: pointer;
@@ -58,103 +58,154 @@ main {
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
-  width: 50rem;
+  width: 52rem;
   margin-top: 4rem;
+  padding-bottom: 3rem;
 }
-main .post {
+main > .index,
+main > .archives,
+main > .categories,
+main > .category,
+main > .links,
+main > .post,
+main > .tag {
   width: 45rem;
-  padding-top: 1rem;
+  padding: 1rem 0.1rem 1rem 0.1rem;
 }
-main .post > h1 a {
+main .index > h1 > a {
   letter-spacing: 0.0625rem;
   font-size: 1.375rem;
   line-height: 1.75rem;
 }
-main .post > p {
+main .index > p {
   line-height: 1.5rem;
   text-indent: 2rem;
 }
-main .post > .info {
+main .index > .info {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 0.5rem 0 2rem 0;
 }
-main .post > .info span {
+main .index > .info > .date,
+main .index > .info .tag {
   font-weight: 400;
   font-size: 0.75rem;
-}
-main .post > .info a {
-  font-size: 0.75rem;
-}
-main .post > .info .date,
-main .post > .info .tag {
   margin: 0 0.5rem;
 }
-main .post > .info .date i,
-main .post > .info .tag i {
+main .index > .info > .date > i,
+main .index > .info .tag > i {
   position: relative;
-  top: 0.05rem;
+  top: 0.1rem;
+}
+main .index > .info > .date > a,
+main .index > .info .tag > a {
+  font-size: 0.75rem;
+}
+main .archives > ul {
+  padding: 0.625rem 0.1rem;
+}
+main .archives > ul > .year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2.2rem;
+  padding: 0.5rem 0;
+}
+main .archives > ul > li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding-bottom: 0.3rem;
+  line-height: 1.75rem;
+}
+main .categories, main .tags {
+  margin: 5rem 0;
+}
+main .categories > ul, main .tags > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+main .categories > ul > li, main .tags > ul > li {
+  margin: 0.5rem 1rem;
+  font-size: 1rem;
+}
+main .categories > ul .count, main .tags > ul .count {
+  display: inline-block;
+  position: relative;
+  top: -0.5rem;
+  right: -0.125rem;
+  font-size: 0.75rem;
+}
+main .category > ul, main .tag > ul {
+  padding: 0.625rem 0.1rem;
+}
+main .category > ul > .name, main .tag > ul > .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2.2rem;
+  padding: 0.5rem 0;
+}
+main .category > ul > li, main .tag > ul > li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding-bottom: 0.3rem;
+  line-height: 1.75rem;
+}
+main .links > ul {
+  padding: 0.625rem 0.1rem;
+}
+main .links > ul > .friend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2.2rem;
+  padding: 0.5rem 0;
+}
+main .links > ul > li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
+  line-height: 1.5rem;
+}
+main .post > .title {
+  margin-top: 4rem;
+}
+main .post > .title > h1 > a {
+  color: black;
+  letter-spacing: 0.0625rem;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+main .post > .title > .info {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+main .post > .title > .info > span {
+  margin: 0 0.25rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+main .post > .title > .info > span i {
+  position: relative;
+  top: 0.125rem;
+  color: rgba(0, 0, 0, 0.85);
 }
 main .pagenav {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0 5rem 0;
+  padding: 2rem 0;
 }
 main .pagenav > a {
   text-decoration: none;
   margin: 0 2rem;
-}
-main .archives, main .category, main tags {
-  width: 45rem;
-  padding-top: 1rem;
-  font-size: 0.875rem;
-}
-main .archives li, main .category li {
-  list-style-type: none;
-  padding: 0;
-}
-main .archives .title, main .category .title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 2.2rem;
-  padding: 0.625rem 0;
-}
-main .archives .list, main .category .list {
-  margin-bottom: 3rem;
-}
-main .archives .list .post-title, main .category .list .post-title {
-  padding-bottom: 0.3rem;
-  line-height: 1.75rem;
-}
-main .archives .list .post-title a, main .category .list .post-title a {
-  display: inline-block;
-  width: 85%;
-}
-main .archives .list .post-title .time, main .category .list .post-title .time {
-  float: right;
-  font-size: 0.875rem;
-}
-main .tags {
-  text-align: center;
-  margin: 4rem 0;
-}
-main .tags ul {
-  margin: 0;
-  padding: 0;
-}
-main .tags ul li {
-  margin: 0.5rem 1rem;
-  display: inline-block;
-  font-size: 1rem;
-}
-main .tags .count {
-  display: inline-block;
-  position: relative;
-  top: -8px;
-  right: -2px;
-  font-size: 12px;
 }
 
 footer {

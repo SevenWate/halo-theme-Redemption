@@ -2,7 +2,7 @@
 
 // 全局 HTML 配置
 html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
         'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
     font-size: 16px;
@@ -41,10 +41,10 @@ body {
     align-items: center;
 
     // 站点标题
-    .title {
+    >.title {
         width: 6rem;
 
-        a {
+        >a {
             font-size: 2.2rem;
             letter-spacing: 0.2rem;
             line-height: 2.4rem;
@@ -52,14 +52,14 @@ body {
     }
 
     // 二级标题
-    .description {
+    >.description {
         font-size: 0.9rem;
 
-        .socials {
+        >.socials {
             display: flex;
             justify-content: flex-end;
 
-            a {
+            >a {
                 font-size: 1rem;
                 margin-left: 0.5rem;
                 cursor: pointer;
@@ -75,127 +75,202 @@ main {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    width: 50rem;
+    width: 52rem;
     margin-top: 4rem;
+    padding-bottom: 3rem;
 
-    .post{
+    // 主体布局
+    > .index,
+    > .archives,
+    > .categories,
+    > .category,
+    > .links,
+    > .post,
+    > .tag
+    {
         width: 45rem;
-        padding-top: 1rem;
+        padding: 1rem 0.1rem 1rem 0.1rem;
     }
-    .post > {
-        h1 {
-            a {
+
+    // 首页
+    .index {
+
+        // 标题
+        >h1 {
+            >a {
                 letter-spacing: 0.0625rem;
                 font-size: 1.375rem;
                 line-height: 1.75rem;
             }
         }
 
-        p {
+        // 摘要
+        >p {
             line-height: 1.5rem;
             text-indent: 2rem;
         }
 
-        .info {
+        // 徽标
+        >.info {
             display: flex;
             justify-content: flex-end;
             flex-wrap: wrap;
             flex-direction: row;
             padding: 0.5rem 0 2rem 0;
 
-            span {
+            >.date,
+            .tag {
                 font-weight: 400;
                 font-size: 0.75rem;
-            }
-
-            a {
-                font-size: 0.75rem;
-            }
-
-            .date,
-            .tag {
                 margin: 0 0.5rem;
 
-                i {
+                >i {
                     position: relative;
-                    top: 0.05rem;
+                    top: 0.1rem;
+                }
+
+                >a {
+                    font-size: 0.75rem;
                 }
 
             }
         }
     }
 
+    // 归档
+    .archives{
+        >ul {
+            padding: 0.625rem 0.1rem;
+
+            >.year {
+                font-size: 1.5rem;
+                font-weight: bold;
+                line-height: 2.2rem;
+                padding: 0.5rem 0;
+            }
+
+            >li {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.875rem;
+                padding-bottom: 0.3rem;
+                line-height: 1.75rem;
+            }
+        }
+    }
+
+    // 分类目录 标签目录
+    .categories,.tags {
+        margin: 5rem 0;
+        > ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+
+            > li {
+                margin: 0.5rem 1rem;
+                font-size: 1rem;
+            }
+
+            .count {
+                display: inline-block;
+                position: relative;
+                top: -0.5rem;
+                right: -0.125rem;
+                font-size: 0.75rem;
+            }
+        }
+    }
+
+    // 分类 标签
+    .category,.tag{
+        >ul {
+            padding: 0.625rem 0.1rem;
+
+            >.name {
+                font-size: 1.5rem;
+                font-weight: bold;
+                line-height: 2.2rem;
+                padding: 0.5rem 0;
+            }
+
+            >li {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.875rem;
+                padding-bottom: 0.3rem;
+                line-height: 1.75rem;
+            }
+        }
+    }
+
+    // 友链
+    .links{
+        > ul {
+            padding: 0.625rem 0.1rem;
+
+            >.friend {
+                font-size: 1.5rem;
+                font-weight: bold;
+                line-height: 2.2rem;
+                padding: 0.5rem 0;
+            }
+
+            >li {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1rem;
+                padding-bottom: 0.3rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    // 文章
+    .post{
+        > .title{
+            margin-top: 4rem;
+            > h1 {
+                > a {
+                    color: rgba(0, 0, 0, 1);
+                    letter-spacing: 0.0625rem;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+            }
+
+            > .info {
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid #f3f3f3;
+    
+                > span{
+                    margin: 0 0.25rem;
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    color: rgb(0, 0, 0, 0.65);
+                    i {
+                        position: relative;
+                        top:0.125rem;
+                        color: rgb(0, 0, 0, 0.85);
+                    }
+                }
+            }
+        }
+    }
+
+    // 分页
     .pagenav {
         display: flex;
         justify-content: space-between;
-        padding: 2rem 0 5rem 0;
-    }
-    .pagenav > {
-        a {
+        padding: 2rem 0;
+
+        >a {
             text-decoration: none;
             margin: 0 2rem;
-        }
-    }
-
-    .archives,.category,tags{
-        width: 45rem;
-        padding-top: 1rem;
-        font-size: 0.875rem;
-    }
-
-    .archives,.category{
-        li {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .title {
-            font-size: 1.4rem;
-            font-weight: bold;
-            line-height: 2.2rem;
-            padding: 0.625rem 0;
-        }
-
-        .list {
-            margin-bottom: 3rem;
-
-            .post-title{
-                padding-bottom: 0.3rem;
-                line-height: 1.75rem;
-
-                a {
-                    display: inline-block;
-                    width: 85%;
-                }
-                .time {
-                    float: right;
-                    font-size: 0.875rem;
-                }
-            }
-        }
-
-    }
-    .tags {
-        text-align: center;
-        margin: 4rem 0;
-
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-    
-        ul li {
-            margin: 0.5rem 1rem;
-            display: inline-block;
-            font-size: 1rem;
-        }
-    
-        .count {
-            display: inline-block;
-            position: relative;
-            top: -8px;
-            right: -2px;
-            font-size: 12px;
         }
     }
 
@@ -213,6 +288,29 @@ footer {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

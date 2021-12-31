@@ -27,14 +27,11 @@ body {
 
 // Header 头部
 .header {
-
     // 站点标题
-    .title {
-
-        a {
-            span {
+    > .title {
+        > a {
+            > span {
                 color: rgb(0, 0, 0);
-
                 &:hover {
                     color: rgba(0, 0, 0, 0.65);
                 }
@@ -43,13 +40,11 @@ body {
     }
 
     // 二级标题
-    .description {
+    > .description {
         color: rgba(0, 0, 0, 0.65);
-
-        .socials {
-            a {
+        > .socials {
+            > a {
                 color: rgba(0, 0, 0, 0.65);
-
                 &:hover {
                     color: rgba(0, 0, 0, 0.85);
                 }
@@ -64,31 +59,29 @@ main {
     background: #ffffff;
     box-shadow: 0 0.375rem 1rem -0.5rem rgba(0, 0, 0, 0.08);
     // 首页
-    .post {
-        h1 {
-            a {
+    .index {
+        > h1 {
+            > a {
                 color: rgba(0, 0, 0, 1);
 
             }
         }
 
-        p {
+        > p {
             color: rgba(0, 0, 0, 0.85);
         }
 
-        .info {
+        > .info {
             border-bottom: 1px solid #f3f3f3;
-
-            span {
-                color: rgb(0, 0, 0, 0.65);
-            }
-
-            a {
-                color: rgb(0, 0, 0, 0.65);
-            }
-
             .date,
             .tag {
+                span {
+                    color: rgb(0, 0, 0, 0.65);
+                }
+    
+                a {
+                    color: rgb(0, 0, 0, 0.65);
+                }
                 i {
                     color: rgb(0, 0, 0, 0.85);
                 }
@@ -96,10 +89,29 @@ main {
             }
         }
     }
+
+    // 归档 分类目录 分类 标签目录 标签 友链
+    .archives,.categories,.category,.tag,.tags,.links{
+        > ul {
+            > .year,.name,.friend{
+                color: rgb(0, 0, 0.85);
+            }
+            > li{
+                > a{
+                    color: rgb(0, 0, 0.85);
+                    &:hover {
+                        color: rgb(0, 0, 0, 0.65);
+                    }
+                }
+                > span{
+                    color: #c5c5c5;
+                }
+            }
+        }
+    }
+
     // 文章分页
     .pagenav {
-        border-bottom: 1px solid #f2f2f2;
-
         a {
             color: rgb(0, 0, 0);
 
@@ -108,46 +120,9 @@ main {
             }
         }
     }
-    // 归档页面,类别页面
-    .archives,.category{
-        .list {
-            .post-title{
-                a {
-                    color: rgb(0, 0, 0.85);
-        
-                    &:hover {
-                        color: rgb(0, 0, 0, 0.65);
-                    }
-                }
-                .time {
-                    color: #c5c5c5;
-                }
-            }
-        }
-
-    }
-
-    // 标记页面
-    .tags {
-        ul {
-            li{
-                a{
-                    color: rgb(0, 0, 0.85);
-        
-                    &:hover {
-                        color: rgb(0, 0, 0, 0.65);
-                    }
-                }
-            }
-        }
-        .count {
-            color: #c5c5c5;
-        }
-    }
 }
 
 // 脚注
-
 footer {
     .copyright {
         a {

@@ -3,7 +3,7 @@
         <main>
             <#include "module/header.ftl">
             <#list posts.content as post>
-                <div class="post">
+                <div class="index">
                     <h1><a href='${post.fullPath!}'>${post.title!}</a></h1>
                         <#if settings.enable_summary!true>
                             <p>${post.summary!}......</p>
@@ -11,7 +11,7 @@
                         <div class="info">
                             <span class="date">
                                 <i class="ri-map-pin-time-line"></i>
-                                <span>${post.createTime?string('yyyy.MM.dd')}</span>
+                                ${post.createTime?string('yyyy.MM.dd')}
                             </span>
                         <#if post.tags?? && post.tags?size gt 0>
                             <span class="tag">

@@ -4,15 +4,17 @@
         <#include "module/header.ftl">
         <div class="archives">
             <#list archives as archive>
-                <div class="title">${archive.year?c}</div>
-                <div class="list">
+                <ul id="${archive.year?c}">
+                    <div class="year">
+                        ${archive.year?c}
+                    </div>
                     <#list archive.posts?sort_by("createTime")?reverse as post>
-                        <div class="post-title">
+                        <li id="${post.createTime?string('MM-dd')}">
                             <a href="${post.fullPath!}">${post.title!}</a>
-                            <div class="time"><span class="date">${post.createTime?string('MM-dd')}</span></div>
-                        </div>
+                            <span>${post.createTime?string('MM-dd')}</span>
+                        </li>
                     </#list>
-                </div>
+                </ul>
             </#list>
         </div>
             <#if posts.totalPages gt 1>

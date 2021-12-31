@@ -3,15 +3,15 @@
     <main>
         <#include "module/header.ftl">
         <div class="category">
-            <div class="title">分类：${category.name}</div>
-            <div class="list">
+            <ul id="${category.slug}">
+                <div class="name">${category.name}</div>
                 <#list posts.content as post>
-                    <div class="post-title">
+                    <li>
                         <a href="${post.fullPath!}">${post.title!}</a>
-                        <div class="time"><span class="date">${post.createTime?string('yyyy-MM-dd')}</span></div>
-                    </div>
-                </#list>
-            </div>
+                        <span>${post.createTime?string('yyyy-MM-dd')}</span>
+                    </li>
+                </#list>     
+            </ul>
         </div>
             <#if posts.totalPages gt 1>
                 <@paginationTag method="categoryPosts" page="${posts.number}" total="${posts.totalPages}" display="3">

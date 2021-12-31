@@ -2,8 +2,8 @@
 <@layout title="分类列表 - ${blog_title!}">
     <main>
         <#include "module/header.ftl">
-        <div class="tags">
-            <ul>
+        <div class="categories">
+            <ul id="categories">
                 <@categoryTag method="list">
                     <#if categories?? && categories?size gt 0>
                         <#list categories as category>
