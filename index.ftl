@@ -25,7 +25,7 @@
                 </div>
             </#list>
             <#if posts.totalPages gt 1>
-                <@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="3">
+                <@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="10">
                     <div class="pagenav">
                     <#if pagination.hasPrev>
                         <a href="${pagination.prevPageFullPath!}" class="pre">

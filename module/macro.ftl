@@ -21,12 +21,16 @@
         <link rel="stylesheet" href="${theme_base!}/source/css/markdown.css"/>
         <link rel="stylesheet" href="${theme_base!}/source/css/redemption.css"/>
 
+        
+
 
     </head>
-    <body class="animate__animated animate__fadeInDown">
-        <#--  菜单  -->
+    <body>
+            <#--  菜单  -->
         <#include "menu.ftl">
+        <div class="container animate__animated animate__fadeInDown">
 
+        
         <#--  主体  -->
         <#nested >
 
@@ -40,16 +44,17 @@
             </div>
             <@global.footer />
         </footer>
-
-
+            
+        </div>
         <#--  公共JS代码  -->
         <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
         <script>
         const heti = new Heti('.heti');
         heti.autoSpacing();
         </script>
-        
+
     </body>
+
 </html>
 </#macro>
 

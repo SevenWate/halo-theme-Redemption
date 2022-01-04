@@ -16,7 +16,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 16px;
 }
 
-body {
+.container {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -68,7 +68,8 @@ main > .categories,
 main > .category,
 main > .links,
 main > .post,
-main > .tag {
+main > .tag,
+main > .journals {
   width: 45rem;
   padding: 1rem 0.1rem 1rem 0.1rem;
 }
@@ -198,6 +199,30 @@ main .post > .title > .info > span i {
   top: 0.125rem;
   color: rgba(0, 0, 0, 0.85);
 }
+main .journals > .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2.2rem;
+  padding: 0.5rem 0;
+}
+main .journals > ul > li {
+  padding: 1rem 0.1rem;
+}
+main .journals > ul > li > .content {
+  padding: 0.25rem 0.25rem;
+  font-size: 1rem;
+}
+main .journals > ul > li > .option {
+  display: flex;
+  justify-content: flex-end;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin: 0 0.5rem;
+}
+main .journals > ul > li > .option > i {
+  padding: 0 0.5rem;
+}
 main .pagenav {
   display: flex;
   justify-content: space-between;
@@ -216,6 +241,12 @@ footer .copyright {
 }
 footer .copyright a {
   margin: 0 0.125rem;
+}
+
+.menu {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 10rem;
 }
 
 /*animation starts*/

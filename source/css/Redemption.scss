@@ -23,7 +23,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 // Body 主体
-body {
+.container {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -86,7 +86,8 @@ main {
     > .category,
     > .links,
     > .post,
-    > .tag
+    > .tag,
+    > .journals
     {
         width: 45rem;
         padding: 1rem 0.1rem 1rem 0.1rem;
@@ -262,6 +263,36 @@ main {
         }
     }
 
+    .journals{
+        > .name{
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 2.2rem;
+            padding: 0.5rem 0;
+        }
+        > ul{
+            > li{
+                padding: 1rem 0.1rem;
+                > .content{
+                    padding: 0.25rem 0.25rem;
+                    font-size: 1rem;
+                }
+                > .option{
+                    display: flex;
+                    justify-content: flex-end;
+                    color: rgb(0, 0, 0, 0.65);
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    margin: 0 0.5rem;
+                    > i{
+                        padding: 0 0.5rem;
+                    }
+                }
+            }
+        }
+        
+    }
+
     // 分页
     .pagenav {
         display: flex;
@@ -290,7 +321,11 @@ footer {
 }
 
 
-
+.menu{
+    position: fixed;
+    right: 0.5rem;
+    bottom: 10rem;
+}
 
 
 

@@ -6,20 +6,16 @@ general:
       label: 二级标题
       type: text
       default: 'the site subtitle'
-    enable_summary:
-      name: enable_summary
-      label: 是否显示文章摘要
-      type: radio
-      data-type: bool
-      default: true
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
-    custom_css:
-      name: custom_css
-      label: 自定义样式
+photos:
+  label: 图库设置
+  items:
+    photoTitle:
+      name: photoTitle
+      label: 标题
+      type: text
+    photodes:
+      name: photodes
+      label: 简述
       type: textarea
 sns:
   label: 社交资料

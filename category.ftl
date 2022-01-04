@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@layout title="分类：${category.name} - ${blog_title!}">
+<@layout title="分类 - ${category.name} - ${blog_title!}">
     <main>
         <#include "module/header.ftl">
         <div class="category">
