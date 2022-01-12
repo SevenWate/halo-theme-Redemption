@@ -39,7 +39,7 @@
         <#-- 脚注   -->
         <footer>
             <div class="copyright">
-                <a href="https://zeuk.me">Designed by Zeuk,</a>
+                <a href="https://www.7wate.com">Designed by Zeuk&7Wate,</a>
                 <a href="https://halo.run">Proudly published with Halo</a>
             </div>
             <@global.footer />
