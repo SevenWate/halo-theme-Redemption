@@ -8,7 +8,7 @@
         <meta name="keywords" content="${meta_keywords!}"/>
         <meta name="description" content="${meta_description!}" />
         <@global.head />
-
+        
 
         <#--  公共样式表  -->
         <link rel="stylesheet" href="${theme_base!}/source/plugins/normalize.css"/>
@@ -27,7 +27,7 @@
     </head>
     <body>
             <#--  菜单  -->
-        <#include "menu.ftl">
+        
         <div class="container animate__animated animate__fadeInDown">
 
         
@@ -38,6 +38,7 @@
 
         <#-- 脚注   -->
         <footer>
+        <#include "menu.ftl">
             <div class="copyright">
                 <a href="https://www.7wate.com">Designed by Zeuk&7Wate,</a>
                 <a href="https://halo.run">Proudly published with Halo</a>

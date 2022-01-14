@@ -44,8 +44,15 @@
                 ${sheet.formatContent!}
             </div>
         </div>
-        <#include "module/comment.ftl">
-        <@comment post=sheet type="sheet" />
-        
+        <div class="commentButton">
+            <a href="${blog_url!}">
+                退回首页
+            </a>
+            <a href="">
+                留下一言
+            </a>
+        </div>
     </main>
+    <#include "module/comment.ftl">
+    <@comment post=sheet type="sheet" />
 </@layout>

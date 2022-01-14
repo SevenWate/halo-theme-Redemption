@@ -17,13 +17,13 @@ html::-webkit-scrollbar-thumb:hover {
     background: #0095ff1a;
 }
 
-// Body
-body {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-}
+// // Body
+// body {
+//     display: flex;
+//     flex-wrap: nowrap;
+//     flex-direction: column;
+//     align-items: center;
+// }
 
 // Header 头部
 .header {
@@ -119,6 +119,41 @@ main {
                 color: rgb(0, 0, 0, 0.65);
             }
         }
+    }
+
+    // 文章
+    .post{
+        > .title{
+            > h1 {
+                color: rgba(0, 0, 0, 1);
+                > a {
+                    color: rgba(0, 0, 0, 1);
+                }
+            }
+
+            > .info {
+                border-bottom: 1px solid #f3f3f3;
+                > span{
+                    color: rgb(0, 0, 0, 0.65);
+                    i {
+
+                        color: rgb(0, 0, 0, 0.85);
+                    }
+                }
+            }
+        }
+    }
+
+    // 日志
+    .journals{
+        > ul{
+            > li{
+                > .option{
+                    color: rgb(0, 0, 0, 0.65);
+                }
+            }
+        }
+        
     }
 }
 

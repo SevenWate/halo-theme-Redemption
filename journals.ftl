@@ -12,13 +12,13 @@
                         <div class="content">
                             ${journal.content!}
                         </div>
-                        <div class="option">
+                        <#--  <div class="option">
 
                         <i class="ri-thumb-up-line"></i>
                         <i class="ri-chat-3-line"></i>
                         <i class="ri-share-forward-line"></i>
 
-                        </div>
+                        </div>  -->
                         <#--  <div class="info">
                         ${user.nickname!}
                         <#assign timeago = (.now?long - journal.createTime?long)>
@@ -50,12 +50,12 @@
                     <div class="pagenav">
                     <#if pagination.hasPrev>
                         <a href="${pagination.prevPageFullPath!}" class="pre">
-                            返回上页
+                            退回上页
                         </a>
                     </#if>
                     <#if pagination.hasNext>
                         <a href="${pagination.nextPageFullPath!}" class="next">
-                            更多日志
+                            阅览更多
                         </a>
                     </#if>
                     </div>

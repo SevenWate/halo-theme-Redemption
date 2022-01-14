@@ -20,12 +20,12 @@
                     <div class="pagenav">
                     <#if pagination.hasPrev>
                         <a href="${pagination.prevPageFullPath!}" class="pre">
-                            返回上页
+                            退回上页
                         </a>
                     </#if>
                     <#if pagination.hasNext>
                         <a href="${pagination.nextPageFullPath!}" class="next">
-                            更多文章
+                            阅览更多
                         </a>
                     </#if>
                     </div>

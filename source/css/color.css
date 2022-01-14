@@ -15,13 +15,6 @@ html::-webkit-scrollbar-thumb:hover {
   background: #0095ff1a;
 }
 
-body {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-}
-
 .header > .title > a > span {
   color: black;
 }
@@ -79,6 +72,24 @@ main .pagenav a {
   color: black;
 }
 main .pagenav a:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+main .post > .title > h1 {
+  color: black;
+}
+main .post > .title > h1 > a {
+  color: black;
+}
+main .post > .title > .info {
+  border-bottom: 1px solid #f3f3f3;
+}
+main .post > .title > .info > span {
+  color: rgba(0, 0, 0, 0.65);
+}
+main .post > .title > .info > span i {
+  color: rgba(0, 0, 0, 0.85);
+}
+main .journals > ul > li > .option {
   color: rgba(0, 0, 0, 0.65);
 }
 
