@@ -20,19 +20,27 @@ photos:
 sns:
   label: 社交资料
   items:
+    aboutme:
+      name: aboutme
+      label: 关于我
+      type: text
     github:
       name: github
       label: Github
       type: text
     wechat:
       name: wechat
-      label: wechat
+      label: 微信
       type: text
     bilibili:
       name: bilibili
-      label: bilibili
+      label: 哔哩哔哩
       type: text
     mail:
       name: mail
-      label: mail
+      label: 邮箱
+      type: text
+    links:
+      name: 友链
+      label: links
       type: text

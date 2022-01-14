@@ -14,7 +14,7 @@
             </ul>
         </div>
             <#if posts.totalPages gt 1>
-                <@paginationTag method="categoryPosts" page="${posts.number}" total="${posts.totalPages}" display="3">
+                <@paginationTag method="categoryPosts" slug="${category.slug!}" page="${posts.number}" total="${posts.totalPages}" display="3">
                     <div class="pagenav">
                     <#if pagination.hasPrev>
                         <a href="${pagination.prevPageFullPath!}" class="pre">

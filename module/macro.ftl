@@ -26,27 +26,26 @@
 
     </head>
     <body>
-            <#--  菜单  -->
-        
         <div class="container animate__animated animate__fadeInDown">
 
-        
-        <#--  主体  -->
-        <#nested >
+            <#--  主体  -->
+            <#nested >
 
-
-
-        <#-- 脚注   -->
-        <footer>
-        <#include "menu.ftl">
-            <div class="copyright">
-                <a href="https://www.7wate.com">Designed by Zeuk&7Wate,</a>
-                <a href="https://halo.run">Proudly published with Halo</a>
-            </div>
-            <@global.footer />
-        </footer>
+            <#-- 脚注   -->
+            <footer>
+            <#--  <#include "menu.ftl">  -->
+                <div class="copyright">
+                    <a href="https://www.7wate.com">Designed by 7Wate.</a>
+                    <a href="https://halo.run">Proudly published with Halo</a>
+                </div>
+                <@global.footer />
+            </footer>
             
         </div>
+
+        <#--  自定义JS代码  -->
+        <script src="${theme_base!}/source/js/redemption.js"></script>
+
         <#--  公共JS代码  -->
         <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
         <script>

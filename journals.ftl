@@ -19,26 +19,26 @@
                         <i class="ri-share-forward-line"></i>
 
                         </div>  -->
-                        <#--  <div class="info">
-                        ${user.nickname!}
+                        <div class="info">
+                        <#--  ${user.nickname!}  -->
                         <#assign timeago = (.now?long - journal.createTime?long)>
                         <#if timeago < 60000 >
                             刚刚发表哦 ~
                         <#elseif (timeago >= 60000) && (timeago < 3600000)>
-                            发表于 ${(timeago / 60000)?int} 分钟前
+                            于 ${(timeago / 60000)?int} 分钟前发表
                         <#elseif (timeago >= 3600000) && (timeago < 86400000)>
-                            发表于 ${(timeago / 3600000)?int} 小时前
+                            于 ${(timeago / 3600000)?int} 小时前发表
                         <#elseif (timeago >= 86400000) && (timeago < 604800000)>
-                            发表于 ${(timeago / 86400000)?int} 天前
+                            于 ${(timeago / 86400000)?int} 天前发表
                         <#elseif (timeago >= 604800000) && (timeago < 3153600000)>
-                            发表于 ${(timeago / 604800000)?int} 周前
+                            于 ${(timeago / 604800000)?int} 周前发表
                         <#elseif (timeago >= 3153600000) && (timeago < 94608000000)>
-                            发表于 ${(timeago / 3153600000)?int} 年前
+                            于 ${(timeago / 3153600000)?int} 年前发表
                         <#elseif (timeago >= 94608000000)>
                             发表于很久很久以前 ~
                         </#if>
                             
-                        </div>  -->
+                        </div>
                     
                     </li>
                 </#list>

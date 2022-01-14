@@ -5,19 +5,26 @@
     <div class="description">
         <p>${settings.sub_title!'the site subtitle'}</p>
         <div class="socials">
+            <#if settings.aboutme??>
+                <a href="${settings.aboutme}" title="关于我" target="_blank"><i class="ri-footprint-line"></i></a>
+            </#if>
             <#if settings.github??>
-                <a href="${settings.github}" title="github" target="_blank"><i class="ri-github-line"></i></a>
+                <a href="${settings.github}" title="Github" target="_blank"><i class="ri-github-line"></i></a>
             </#if>
             <#if settings.wechat??>
-                <a href="${settings.wechat}" title="wechat" target="_blank"><i class="ri-wechat-line"></i></a>
+                <a href="${settings.wechat}" title="微信" target="_blank"><i class="ri-wechat-line"></i></a>
             </#if>
             <#if settings.bilibili??>
-                <a href="${settings.bilibili}" title="bilibili" target="_blank"><i class="ri-bilibili-line"></i></a>
+                <a href="${settings.bilibili}" title="哔哩哔哩" target="_blank"><i class="ri-bilibili-line"></i></a>
             </#if>
             <#if settings.mail??>
-                <a href="mailto:${settings.mail}" title="mail" target="_blank"><i class="ri-mail-line"></i></a>
+                <a href="mailto:${settings.mail}" title="邮箱" target="_blank"><i class="ri-mail-line"></i></a>
             </#if>
-            <a href="/rss.xml" type="application/rss+xml" title="rss" target="_blank"><i class="ri-rss-line"></i></a>
+            <#if settings.links??>
+                <a href="${settings.links}" title="友情链接" target="_blank"><i class="ri-links-line"></i></a>
+            </#if>
+            <a href="${sitemap_html_url!}" type="application/sitemap" title="站点地图" target="_blank"><i class="ri-map-2-line"></i></a>
+            <a href="${rss_url!}" type="application/rss+xml" title="订阅" target="_blank"><i class="ri-rss-line"></i></a>
         </div>
     </div>
 </div>

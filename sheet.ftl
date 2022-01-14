@@ -44,11 +44,11 @@
                 ${sheet.formatContent!}
             </div>
         </div>
-        <div class="commentButton">
-            <a href="${blog_url!}">
+        <div class="post-bottom-menu">
+            <a href="${blog_url!}" >
                 退回首页
             </a>
-            <a href="">
+            <a href="javascript:document.getElementById('comment').classList.remove('close')">
                 留下一言
             </a>
         </div>

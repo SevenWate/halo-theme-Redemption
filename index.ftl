@@ -11,13 +11,13 @@
                         <div class="info">
                             <span class="date">
                                 <i class="ri-map-pin-time-line"></i>
-                                ${post.createTime?string('yyyy.MM.dd')}
+                                <a href="${archives_url!}">${post.createTime?string('yyyy.MM.dd')}</a>
                             </span>
                         <#if post.tags?? && post.tags?size gt 0>
                             <span class="tag">
                                 <i class="ri-bookmark-3-line"></i>
                                 <#list post.tags as tag>
-                                <a href="${tag.fullPath!}">${tag.name!}</a>
+                                <a href="${tags_url!}">${tag.name!}</a>
                                 </#list>
                             </span>
                         </#if>

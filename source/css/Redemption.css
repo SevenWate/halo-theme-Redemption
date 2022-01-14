@@ -41,6 +41,9 @@ html::-webkit-scrollbar-thumb {
   line-height: 2.4rem;
 }
 .header > .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   font-size: 0.9rem;
 }
 .header > .description > .socials {
@@ -218,6 +221,11 @@ main .journals > ul > li > .option {
 main .journals > ul > li > .option > i {
   padding: 0 0.5rem;
 }
+main .journals > ul > li > .info {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+}
 main .pagenav {
   display: flex;
   justify-content: space-between;
@@ -226,26 +234,6 @@ main .pagenav {
 main .pagenav > a {
   text-decoration: none;
   margin: 0 2rem;
-}
-
-.comment {
-  width: 47rem;
-  margin: 1rem 0rem;
-  padding: 1rem 2.5rem;
-  background: #ffffff;
-  box-shadow: 0 0.375rem 1rem -0.5rem rgba(0, 0, 0, 0.08);
-}
-
-.commentButton {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  width: 40rem;
-  border-top: 1px solid #f3f3f3;
-}
-.commentButton > a {
-  color: black;
 }
 
 footer {
@@ -258,10 +246,22 @@ footer .copyright a {
   margin: 0 0.125rem;
 }
 
-.menu {
-  position: fixed;
-  right: 0.5rem;
-  bottom: 10rem;
+.comment {
+  width: 47rem;
+  margin: 1rem 0rem;
+  padding: 1rem 2.5rem;
+}
+
+.close {
+  display: none;
+}
+
+.post-bottom-menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  width: 40rem;
 }
 
 /*animation starts*/

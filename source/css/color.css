@@ -65,6 +65,9 @@ main .archives > ul > li > a, main .categories > ul > li > a, main .category > u
 main .archives > ul > li > a:hover, main .categories > ul > li > a:hover, main .category > ul > li > a:hover, main .tag > ul > li > a:hover, main .tags > ul > li > a:hover, main .links > ul > li > a:hover {
   color: rgba(0, 0, 0, 0.65);
 }
+main .archives > ul > li > a > span, main .categories > ul > li > a > span, main .category > ul > li > a > span, main .tag > ul > li > a > span, main .tags > ul > li > a > span, main .links > ul > li > a > span {
+  color: #c5c5c5;
+}
 main .archives > ul > li > span, main .categories > ul > li > span, main .category > ul > li > span, main .tag > ul > li > span, main .tags > ul > li > span, main .links > ul > li > span {
   color: #c5c5c5;
 }
@@ -92,10 +95,25 @@ main .post > .title > .info > span i {
 main .journals > ul > li > .option {
   color: rgba(0, 0, 0, 0.65);
 }
+main .journals > ul > li > .info {
+  color: #c5c5c5;
+}
 
 footer .copyright a {
   color: rgba(0, 0, 0, 0.25);
 }
 footer .copyright a:hover {
   color: rgba(0, 0, 0, 0.85);
+}
+
+.comment {
+  background: #ffffff;
+  box-shadow: 0 0.375rem 1rem -0.5rem rgba(0, 0, 0, 0.08);
+}
+
+.post-bottom-menu {
+  border-top: 1px solid #f3f3f3;
+}
+.post-bottom-menu > a {
+  color: black;
 }
