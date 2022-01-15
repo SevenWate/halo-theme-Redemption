@@ -1,119 +1,293 @@
-html {
-  background-color: #f5f5f5;
-  color: #1f1f1f;
-}
-
 html::-webkit-scrollbar-thumb {
-  background-color: #0000000d;
+  background-color: rgba(0, 0, 0, 0.051);
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background-color: #00000026;
+  background-color: rgba(0, 0, 0, 0.249);
 }
 
-::selection {
-  background: #0095ff1a;
+[data-mode=light] body {
+  background-color: #f0f0f0;
+  color: #262626;
 }
-
-.header > .title > a > span {
-  color: black;
+[data-mode=light] .header > .title > a > span {
+  color: #141414;
 }
-.header > .title > a > span:hover {
-  color: rgba(0, 0, 0, 0.65);
+[data-mode=light] .header > .title > a > span:hover {
+  color: #595959;
 }
-.header > .description {
-  color: rgba(0, 0, 0, 0.65);
+[data-mode=light] .header > .description {
+  color: #595959;
 }
-.header > .description > .socials > a {
-  color: rgba(0, 0, 0, 0.65);
+[data-mode=light] .header > .description > .socials > a {
+  color: #595959;
 }
-.header > .description > .socials > a:hover {
-  color: rgba(0, 0, 0, 0.85);
+[data-mode=light] .header > .description > .socials > a:hover {
+  color: #141414;
 }
-
-main {
-  background: #ffffff;
-  box-shadow: 0 0.375rem 1rem -0.5rem rgba(0, 0, 0, 0.08);
+[data-mode=light] main {
+  background: #fafafa;
+  box-shadow: 0 0.375rem 1rem -0.5rem #bfbfbf;
 }
-main .index > h1 > a {
-  color: black;
+[data-mode=light] main .index > h1 > a {
+  color: #1f1f1f;
 }
-main .index > p {
-  color: rgba(0, 0, 0, 0.85);
+[data-mode=light] main .index > h1 > a:hover {
+  color: #595959;
 }
-main .index > .info {
+[data-mode=light] main .index > p {
+  color: #262626;
+}
+[data-mode=light] main .index > .info {
   border-bottom: 1px solid #f3f3f3;
 }
-main .index > .info .date span,
-main .index > .info .tag span {
-  color: rgba(0, 0, 0, 0.65);
+[data-mode=light] main .index > .info .date span,
+[data-mode=light] main .index > .info .tag span {
+  color: #8c8c8c;
 }
-main .index > .info .date a,
-main .index > .info .tag a {
-  color: rgba(0, 0, 0, 0.65);
+[data-mode=light] main .index > .info .date a,
+[data-mode=light] main .index > .info .tag a {
+  color: #8c8c8c;
 }
-main .index > .info .date i,
-main .index > .info .tag i {
-  color: rgba(0, 0, 0, 0.85);
+[data-mode=light] main .index > .info .date i,
+[data-mode=light] main .index > .info .tag i {
+  color: #8c8c8c;
 }
-main .archives > ul > .year, main .archives > ul .name, main .archives > ul .friend, main .categories > ul > .year, main .categories > ul .name, main .categories > ul .friend, main .category > ul > .year, main .category > ul .name, main .category > ul .friend, main .tag > ul > .year, main .tag > ul .name, main .tag > ul .friend, main .tags > ul > .year, main .tags > ul .name, main .tags > ul .friend, main .links > ul > .year, main .links > ul .name, main .links > ul .friend {
-  color: #000001;
+[data-mode=light] main .archives > ul > .year,
+[data-mode=light] main .archives > ul .name,
+[data-mode=light] main .archives > ul .friend,
+[data-mode=light] main .categories > ul > .year,
+[data-mode=light] main .categories > ul .name,
+[data-mode=light] main .categories > ul .friend,
+[data-mode=light] main .category > ul > .year,
+[data-mode=light] main .category > ul .name,
+[data-mode=light] main .category > ul .friend,
+[data-mode=light] main .tag > ul > .year,
+[data-mode=light] main .tag > ul .name,
+[data-mode=light] main .tag > ul .friend,
+[data-mode=light] main .tags > ul > .year,
+[data-mode=light] main .tags > ul .name,
+[data-mode=light] main .tags > ul .friend,
+[data-mode=light] main .links > ul > .year,
+[data-mode=light] main .links > ul .name,
+[data-mode=light] main .links > ul .friend {
+  color: #1f1f1f;
 }
-main .archives > ul > li > a, main .categories > ul > li > a, main .category > ul > li > a, main .tag > ul > li > a, main .tags > ul > li > a, main .links > ul > li > a {
-  color: #000001;
+[data-mode=light] main .archives > ul > li > a,
+[data-mode=light] main .categories > ul > li > a,
+[data-mode=light] main .category > ul > li > a,
+[data-mode=light] main .tag > ul > li > a,
+[data-mode=light] main .tags > ul > li > a,
+[data-mode=light] main .links > ul > li > a {
+  color: #262626;
 }
-main .archives > ul > li > a:hover, main .categories > ul > li > a:hover, main .category > ul > li > a:hover, main .tag > ul > li > a:hover, main .tags > ul > li > a:hover, main .links > ul > li > a:hover {
-  color: rgba(0, 0, 0, 0.65);
+[data-mode=light] main .archives > ul > li > a:hover,
+[data-mode=light] main .categories > ul > li > a:hover,
+[data-mode=light] main .category > ul > li > a:hover,
+[data-mode=light] main .tag > ul > li > a:hover,
+[data-mode=light] main .tags > ul > li > a:hover,
+[data-mode=light] main .links > ul > li > a:hover {
+  color: #595959;
 }
-main .archives > ul > li > a > span, main .categories > ul > li > a > span, main .category > ul > li > a > span, main .tag > ul > li > a > span, main .tags > ul > li > a > span, main .links > ul > li > a > span {
-  color: #c5c5c5;
+[data-mode=light] main .archives > ul > li > a > span,
+[data-mode=light] main .categories > ul > li > a > span,
+[data-mode=light] main .category > ul > li > a > span,
+[data-mode=light] main .tag > ul > li > a > span,
+[data-mode=light] main .tags > ul > li > a > span,
+[data-mode=light] main .links > ul > li > a > span {
+  color: #8c8c8c;
 }
-main .archives > ul > li > span, main .categories > ul > li > span, main .category > ul > li > span, main .tag > ul > li > span, main .tags > ul > li > span, main .links > ul > li > span {
-  color: #c5c5c5;
+[data-mode=light] main .archives > ul > li > span,
+[data-mode=light] main .categories > ul > li > span,
+[data-mode=light] main .category > ul > li > span,
+[data-mode=light] main .tag > ul > li > span,
+[data-mode=light] main .tags > ul > li > span,
+[data-mode=light] main .links > ul > li > span {
+  color: #8c8c8c;
 }
-main .pagenav a {
-  color: black;
+[data-mode=light] main .pagenav a {
+  color: #262626;
 }
-main .pagenav a:hover {
-  color: rgba(0, 0, 0, 0.65);
+[data-mode=light] main .pagenav a:hover {
+  color: #595959;
 }
-main .post > .title > h1 {
-  color: black;
+[data-mode=light] main .post > .title > h1 {
+  color: #1f1f1f;
 }
-main .post > .title > h1 > a {
-  color: black;
+[data-mode=light] main .post > .title > h1 > a {
+  color: #1f1f1f;
 }
-main .post > .title > .info {
-  border-bottom: 1px solid #f3f3f3;
+[data-mode=light] main .post > .title > .info {
+  border-bottom: 1px solid #f5f5f5;
 }
-main .post > .title > .info > span {
-  color: rgba(0, 0, 0, 0.65);
+[data-mode=light] main .post > .title > .info > span {
+  color: #8c8c8c;
 }
-main .post > .title > .info > span i {
-  color: rgba(0, 0, 0, 0.85);
+[data-mode=light] main .post > .title > .info > span i {
+  color: #8c8c8c;
 }
-main .journals > ul > li > .option {
-  color: rgba(0, 0, 0, 0.65);
+[data-mode=light] main .journals > ul > li > .info {
+  color: #8c8c8c;
 }
-main .journals > ul > li > .info {
-  color: #c5c5c5;
+[data-mode=light] footer .copyright a {
+  color: #bfbfbf;
+}
+[data-mode=light] footer .copyright a:hover {
+  color: #262626;
+}
+[data-mode=light] .comment {
+  background: #fafafa;
+  box-shadow: 0 0.375rem 1rem -0.5rem #bfbfbf;
+}
+[data-mode=light] .post-bottom-menu {
+  border-top: 1px solid #f5f5f5;
+}
+[data-mode=light] .post-bottom-menu > a {
+  color: #262626;
+}
+[data-mode=light] .post-bottom-menu > a:hover {
+  color: #595959;
 }
 
-footer .copyright a {
-  color: rgba(0, 0, 0, 0.25);
+[data-mode=dark] body {
+  background-color: #383838;
+  color: #b6b6b6;
 }
-footer .copyright a:hover {
-  color: rgba(0, 0, 0, 0.85);
+[data-mode=dark] .header > .title > a > span {
+  color: #bfbfbf;
 }
-
-.comment {
-  background: #ffffff;
-  box-shadow: 0 0.375rem 1rem -0.5rem rgba(0, 0, 0, 0.08);
+[data-mode=dark] .header > .title > a > span:hover {
+  color: #434343;
 }
-
-.post-bottom-menu {
-  border-top: 1px solid #f3f3f3;
+[data-mode=dark] .header > .description {
+  color: #8c8c8c;
 }
-.post-bottom-menu > a {
-  color: black;
+[data-mode=dark] .header > .description > .socials > a {
+  color: #8c8c8c;
+}
+[data-mode=dark] .header > .description > .socials > a:hover {
+  color: #434343;
+}
+[data-mode=dark] main {
+  background: #292929;
+  box-shadow: 0 0.375rem 1rem -0.5rem #262626;
+}
+[data-mode=dark] main .index > h1 > a {
+  color: #b8b8b8;
+}
+[data-mode=dark] main .index > h1 > a:hover {
+  color: #434343;
+}
+[data-mode=dark] main .index > p {
+  color: #b6b6b6;
+}
+[data-mode=dark] main .index > .info {
+  border-bottom: 1px solid #434343;
+}
+[data-mode=dark] main .index > .info .date span,
+[data-mode=dark] main .index > .info .tag span {
+  color: #8c8c8c;
+}
+[data-mode=dark] main .index > .info .date a,
+[data-mode=dark] main .index > .info .tag a {
+  color: #8c8c8c;
+}
+[data-mode=dark] main .index > .info .date i,
+[data-mode=dark] main .index > .info .tag i {
+  color: #8c8c8c;
+}
+[data-mode=dark] main .archives > ul > .year,
+[data-mode=dark] main .archives > ul .name,
+[data-mode=dark] main .archives > ul .friend,
+[data-mode=dark] main .categories > ul > .year,
+[data-mode=dark] main .categories > ul .name,
+[data-mode=dark] main .categories > ul .friend,
+[data-mode=dark] main .category > ul > .year,
+[data-mode=dark] main .category > ul .name,
+[data-mode=dark] main .category > ul .friend,
+[data-mode=dark] main .tag > ul > .year,
+[data-mode=dark] main .tag > ul .name,
+[data-mode=dark] main .tag > ul .friend,
+[data-mode=dark] main .tags > ul > .year,
+[data-mode=dark] main .tags > ul .name,
+[data-mode=dark] main .tags > ul .friend,
+[data-mode=dark] main .links > ul > .year,
+[data-mode=dark] main .links > ul .name,
+[data-mode=dark] main .links > ul .friend {
+  color: #b8b8b8;
+}
+[data-mode=dark] main .archives > ul > li > a,
+[data-mode=dark] main .categories > ul > li > a,
+[data-mode=dark] main .category > ul > li > a,
+[data-mode=dark] main .tag > ul > li > a,
+[data-mode=dark] main .tags > ul > li > a,
+[data-mode=dark] main .links > ul > li > a {
+  color: #b6b6b6;
+}
+[data-mode=dark] main .archives > ul > li > a:hover,
+[data-mode=dark] main .categories > ul > li > a:hover,
+[data-mode=dark] main .category > ul > li > a:hover,
+[data-mode=dark] main .tag > ul > li > a:hover,
+[data-mode=dark] main .tags > ul > li > a:hover,
+[data-mode=dark] main .links > ul > li > a:hover {
+  color: #434343;
+}
+[data-mode=dark] main .archives > ul > li > a > span,
+[data-mode=dark] main .categories > ul > li > a > span,
+[data-mode=dark] main .category > ul > li > a > span,
+[data-mode=dark] main .tag > ul > li > a > span,
+[data-mode=dark] main .tags > ul > li > a > span,
+[data-mode=dark] main .links > ul > li > a > span {
+  color: #8c8c8c;
+}
+[data-mode=dark] main .archives > ul > li > span,
+[data-mode=dark] main .categories > ul > li > span,
+[data-mode=dark] main .category > ul > li > span,
+[data-mode=dark] main .tag > ul > li > span,
+[data-mode=dark] main .tags > ul > li > span,
+[data-mode=dark] main .links > ul > li > span {
+  color: #8c8c8c;
+}
+[data-mode=dark] main .pagenav a {
+  color: #b6b6b6;
+}
+[data-mode=dark] main .pagenav a:hover {
+  color: #434343;
+}
+[data-mode=dark] main .post > .title > h1 {
+  color: #b8b8b8;
+}
+[data-mode=dark] main .post > .title > h1 > a {
+  color: #b8b8b8;
+}
+[data-mode=dark] main .post > .title > .info {
+  border-bottom: 1px solid #434343;
+}
+[data-mode=dark] main .post > .title > .info > span {
+  color: #8c8c8c;
+}
+[data-mode=dark] main .post > .title > .info > span i {
+  color: #8c8c8c;
+}
+[data-mode=dark] main .journals > ul > li > .info {
+  color: #8c8c8c;
+}
+[data-mode=dark] footer .copyright a {
+  color: #262626;
+}
+[data-mode=dark] footer .copyright a:hover {
+  color: #bfbfbf;
+}
+[data-mode=dark] .comment {
+  background: #292929;
+  box-shadow: 0 0.375rem 1rem -0.5rem #262626;
+}
+[data-mode=dark] .post-bottom-menu {
+  border-top: 1px solid #434343;
+}
+[data-mode=dark] .post-bottom-menu > a {
+  color: #b6b6b6;
+}
+[data-mode=dark] .post-bottom-menu > a:hover {
+  color: #434343;
 }

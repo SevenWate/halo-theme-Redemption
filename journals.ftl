@@ -12,13 +12,6 @@
                         <div class="content">
                             ${journal.content!}
                         </div>
-                        <#--  <div class="option">
-
-                        <i class="ri-thumb-up-line"></i>
-                        <i class="ri-chat-3-line"></i>
-                        <i class="ri-share-forward-line"></i>
-
-                        </div>  -->
                         <div class="info">
                         <#--  ${user.nickname!}  -->
                         <#assign timeago = (.now?long - journal.createTime?long)>

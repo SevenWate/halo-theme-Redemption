@@ -1,11 +1,3 @@
-html {
-  font-family: -apple-system, BlinksMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px;
-  font-weight: 500;
-  font-variant-numeric: tabular-nums;
-  -webkit-font-smoothing: antialiased;
-}
-
 html::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -306,3 +298,6 @@ footer .copyright a {
   }
 }
 /*animation ends*/
+.heti > img {
+  width: 97% !important;
+}

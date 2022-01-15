@@ -1,16 +1,5 @@
 @charset "UTF-8";
 
-// 全局 HTML 配置
-html {
-    font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
-    font-size: 16px;
-    font-weight: 500;
-    font-variant-numeric: tabular-nums;
-    -webkit-font-smoothing: antialiased;
-}
-
 // 滚动条
 html::-webkit-scrollbar {
     width: 10px;
@@ -22,7 +11,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 16px;
 }
 
-// Body 主体
+// container 主体
 .container {
     display: flex;
     flex-wrap: nowrap;
@@ -326,12 +315,6 @@ footer {
     }
 }
 
-// .menu{
-//     position: fixed;
-//     right: 0.5rem;
-//     bottom: 10rem;
-// }
-
 // 评论组件
 .comment
 {
@@ -404,3 +387,14 @@ footer {
 
 
 /*animation ends*/
+
+// .menu{
+//     position: fixed;
+//     right: 0.5rem;
+//     bottom: 10rem;
+// }
+
+// heti
+.heti > img{
+    width: 97%!important;
+}
