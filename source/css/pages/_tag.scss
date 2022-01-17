@@ -1,0 +1,97 @@
+@import "../base/variables";
+
+// 标签
+.tag {
+    >ul {
+        padding: 0.625rem 0.1rem;
+
+        >.name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 2.2rem;
+            padding: 0.5rem 0;
+            // 浅色
+            color: #262626;
+
+            // 深色
+            @include darkmode {
+                color: #dbdbdb;
+            }
+        }
+
+        >li {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            padding-bottom: 0.3rem;
+            line-height: 1.75rem;
+
+            > a {
+                // 浅色
+                color: #595959;
+
+                &:hover {
+                    color: #59595980;
+                }
+
+                // 深色
+                @include darkmode {
+                    color: #dbdbdb;
+
+                    &:hover {
+                        color: #dbdbdb80;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 标签目录
+.tags {
+    margin: 5rem 0;
+
+    >ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        >li {
+            margin: 0.5rem 1rem;
+            font-size: 1rem;
+
+            >a {
+                // 浅色
+                color: #262626;
+
+                &:hover {
+                    color: #26262680;
+                }
+
+                // 深色
+                @include darkmode {
+                    color: #dbdbdb;
+
+                    &:hover {
+                        color: #dbdbdb80;
+                    }
+                }
+
+                >span {
+                    color: #8c8c8c;
+                }
+            }
+        }
+
+        .count {
+            display: inline-block;
+            position: relative;
+            top: -0.5rem;
+            right: -0.125rem;
+            font-size: 0.75rem;
+        }
+    }
+}

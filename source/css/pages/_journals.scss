@@ -1,0 +1,47 @@
+@import "../base/variables";
+
+// 日志
+.journals {
+    >.name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+        padding: 0.5rem 0;
+        // 浅色
+        color: #262626;
+
+        // 深色
+        @include darkmode {
+            color: #dbdbdb;
+        }
+    }
+
+    >ul {
+        >li {
+            padding: 1rem 0.1rem;
+
+            >.content {
+                padding: 0.25rem 0.25rem;
+                font-size: 1rem;
+                // 浅色
+                color: #595959;
+
+                // 深色
+                @include darkmode {
+                    color: #acacac;
+                }
+            }
+
+            >.info {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 0.75rem;
+                color: #8c8c8c;
+
+                @include darkmode {
+                    color: #7d7d7d;
+                }
+            }
+        }
+    }
+}

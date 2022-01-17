@@ -1,0 +1,95 @@
+// 首页
+@import "../base/variables";
+
+.index {
+
+    // 标题
+    >h1 {
+        >a {
+            letter-spacing: 0.0625rem;
+            font-size: 1.375rem;
+            line-height: 1.75rem;
+            // 浅色
+            color: #262626;
+
+            &:hover {
+                color: #26262680;
+            }
+
+            // 深色
+            @include darkmode {
+                color: #dbdbdb;
+
+                &:hover {
+                    color: #dbdbdb80;
+                }
+            }
+        }
+    }
+
+    // 摘要
+    >p {
+        line-height: 1.5rem;
+        text-indent: 2rem;
+
+        // 浅色
+        color: #595959;
+
+        // 深色
+        @include darkmode {
+            color: #acacac;
+        }
+    }
+
+    // 徽标
+    >.info {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0.5rem 0 2rem 0;
+
+        // 浅色
+        border-bottom: 1px solid #d9d9d9;
+
+        // 深色
+        @include darkmode {
+            border-bottom: 1px solid #434343;
+        }
+
+        >.date,
+        >.tag {
+            font-weight: 400;
+            font-size: 0.75rem;
+            margin: 0 0.5rem;
+
+            >i {
+                position: relative;
+                top: 0.1rem;
+                color: #8c8c8c;
+
+                @include darkmode {
+                    color: #7d7d7d;
+                }
+            }
+
+            >a {
+                font-size: 0.75rem;
+                color: #8c8c8c;
+
+                &:hover {
+                    color: #8c8c8c80;
+                }
+
+                @include darkmode {
+                    color: #7d7d7d;
+
+                    &:hover {
+                        color: #7d7d7d80;
+                    }
+                }
+            }
+
+        }
+    }
+}

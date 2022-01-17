@@ -1,0 +1,90 @@
+// Header 头部
+
+@import "../../base/variables";
+.header {
+    width: 45rem;
+    padding: 7rem 0 3rem 0;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // 站点标题
+    >.title {
+        width: 6rem;
+
+        >a {
+            font-size: 2.2rem;
+            letter-spacing: 0.2rem;
+            line-height: 2.4rem;
+
+            >span {
+
+                // 浅色
+                color:#262626;
+
+                &:hover {
+                    color: #26262680;
+                }
+
+                // 深色
+                @include darkmode {
+                    color: #dbdbdb;
+
+                    &:hover {
+                        color: #dbdbdb80;
+                    }
+                }
+
+            }
+        }
+    }
+
+    // 二级标题
+    >.description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        font-size: 0.9rem;
+
+        // 浅色
+        color: #8c8c8c;
+
+        // 深色
+        @include darkmode {
+            color: #7d7d7d;
+        }
+
+        >.socials {
+            display: flex;
+            justify-content: flex-end;
+
+            >a {
+                font-size: 1rem;
+                margin-left: 0.5rem;
+                cursor: pointer;
+
+
+                // 浅色
+                color: #8c8c8c;
+
+                &:hover {
+                    color: #8c8c8c80;
+                }
+
+                // 深色
+                @include darkmode {
+                    color: #7d7d7d;
+
+                    &:hover {
+                        color: #7d7d7d80;
+                    }
+                }
+            }
+        }
+    }
+}

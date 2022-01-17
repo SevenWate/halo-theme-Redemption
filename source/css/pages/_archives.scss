@@ -1,0 +1,51 @@
+ // 归档
+
+@import "../base/variables";
+
+.archives {
+    >ul {
+        padding: 0.625rem 0.1rem;
+
+        >.year {
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 2.2rem;
+            padding: 0.5rem 0;
+            // 浅色
+            color: #262626;
+            // 深色
+            @include darkmode{
+                color: #dbdbdb;
+            }
+        }
+
+        >li {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            padding-bottom: 0.3rem;
+            line-height: 1.75rem;
+
+            > a {
+                // 浅色
+                color:#595959;
+                &:hover {
+                    color: #59595980;
+                }
+                // 深色
+                @include darkmode{
+                    color: #acacac;
+                    &:hover {
+                        color: #acacac80;
+                    }
+                }
+            }
+            >span{
+                color:#8c8c8c;
+                @include darkmode{
+                    color: #7d7d7d;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "../base/variables";
+
+// 友链
+.links {
+    >ul {
+        padding: 0.625rem 0.1rem;
+
+        >.friend {
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 2.2rem;
+            padding: 0.5rem 0;
+
+            // 浅色
+            color: #262626;
+
+            // 深色
+            @include darkmode {
+                color: #dbdbdb;
+            }
+        }
+
+        >li {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+            padding-bottom: 0.3rem;
+            line-height: 1.5rem;
+
+            >a {
+                // 浅色
+                color: #595959;
+
+                &:hover {
+                    color: #59595980;
+                }
+
+                // 深色
+                @include darkmode {
+                    color: #dbdbdb;
+
+                    &:hover {
+                        color: #dbdbdb80;
+                    }
+                }
+            }
+        }
+    }
+}

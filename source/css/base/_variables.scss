@@ -1,0 +1,56 @@
+$darkmode: manual !default; // true | false | 'manual'
+$manualmode-auto-selector: '[data-darkmode="auto"] &' !default;
+$manualmode-dark-selector: '[data-darkmode="dark"] &' !default;
+
+
+
+
+
+@mixin darkmode($darkmode: $darkmode, $dark-selector: $manualmode-dark-selector, $auto-selector: $manualmode-auto-selector) {
+    // darkmode = ture  : 跟随系统
+    // darkmode = false : 不跟随系统
+    // darkmode = manual : 手动模式
+    @if $darkmode=='manual' {
+        #{$dark-selector} {
+            @content;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            #{$auto-selector} {
+                @content;
+            }
+        }
+    }
+
+    @else if $darkmode {
+        @media (prefers-color-scheme: dark) {
+            @content;
+        }
+    }
+}
+
+
+
+// 超小屏幕（手机，小于 768px）
+// @media (max-width: 768px) { ... }
+ 
+// 小屏幕（平板，大于等于 768px）
+// @media (min-width: 768px) and (max-width: 768px) { ... }
+ 
+// 中等屏幕（桌面显示器，大于等于 992px）
+// @media (min-width: 992px) and (max-width: 992px) { ... }
+ 
+// 大屏幕（大桌面显示器，大于等于 1200px）
+// @media (min-width: 1200px) { ... }
+
+
+
+
+
+
+
+
+
+
+
+

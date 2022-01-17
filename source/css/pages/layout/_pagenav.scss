@@ -1,0 +1,24 @@
+// 分页
+.pagenav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    >a {
+        text-decoration: none;
+        margin: 0 2rem;
+        color: #262626;
+
+        &:hover {
+            color: #595959;
+        }
+
+        @include darkmode {
+            color: #b6b6b6;
+
+            &:hover {
+                color: #434343;
+            }
+        }
+    }
+}

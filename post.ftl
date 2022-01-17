@@ -46,7 +46,7 @@
                     </span>
                 </div>
             </div>
-            <div class="heti">
+            <div class="markdown">
                 ${post.formatContent!}
             </div>
         </div>

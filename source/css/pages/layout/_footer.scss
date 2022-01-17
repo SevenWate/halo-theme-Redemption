@@ -1,0 +1,30 @@
+// 页脚
+@import "../../base/variables";
+
+footer {
+    padding: 2rem 0;
+
+    .copyright {
+        font-size: 0.8rem;
+
+        a {
+            margin: 0 0.125rem;
+
+            // 浅色
+            color: #bfbfbf;
+            &:hover {
+                color: #262626;
+            }
+
+            // 深色
+            @include darkmode{
+                color: #262626;
+
+                &:hover {
+                    color: #bfbfbf;
+                }
+            }
+
+        }
+    }
+}
