@@ -1,15 +1,7 @@
 // 评论组件
 .comment {
-    width: 47rem;
+    width: 52rem;
     margin: 1rem 0rem;
-    padding: 1rem 2.5rem;
-    background: #fafafa;
-    box-shadow: 0 0.375rem 1rem -0.5rem #bfbfbf;
-
-    @include darkmode {
-        background: #292929;
-        box-shadow: 0 0.375rem 1rem -0.5rem #262626;
-    }
 }
 
 .post-bottom-menu {
@@ -42,3 +34,7 @@
         }
     }
 }
+
+
+
+

@@ -54,5 +54,5 @@
         </div>
     </main>
     <#include "module/comment.ftl">
-    <@comment post=sheet type="sheet" />
+    <@comment target=sheet type="sheet" />
 </@layout>

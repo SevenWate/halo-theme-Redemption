@@ -60,5 +60,5 @@
         </div>
     </main>
     <#include "module/comment.ftl"> 
-    <@comment post=post type="post" />
+    <@comment target=post type="post" />
 </@layout>

@@ -1,6 +1,6 @@
 <#macro layout title>
 <!DOCTYPE html>
-<html lang="zh-CN" data-font="sans" data-darkmode="light">
+<html lang="zh-CN" data-font="sans">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -16,7 +16,7 @@
         
         <#--  自定义样式表  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/redemption.css"/>
-        <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+        <link rel="stylesheet" href="https://cdn.7wate.com/halo/redemption/heti.min.css">
     </head>
     <body>
         <div class="container  animate__animated animate__fadeInDown">
@@ -37,7 +37,7 @@
         </div>
 
         <#--  自定义JS代码  -->
-        <script src="${theme_base!}/source/js/redemption.js"></script>
+        <#--  <script charset="utf-8" src="${theme_base!}/source/plugins/halo-comment.min2.js"></script>  -->
 
     </body>
     <#include "menu.ftl">

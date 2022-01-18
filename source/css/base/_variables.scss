@@ -1,4 +1,4 @@
-$darkmode: manual !default; // true | false | 'manual'
+$darkmode: true !default; // true | false | 'manual'
 $manualmode-auto-selector: '[data-darkmode="auto"] &' !default;
 $manualmode-dark-selector: '[data-darkmode="dark"] &' !default;
 
