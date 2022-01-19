@@ -61,4 +61,16 @@
             }
         }
     }
+    // =========== 768px 设备 ===========
+    @media (min-width: 320px) and (max-width: 768px) {
+        >ul {
+            >li {
+                padding: 2.5% 0;
+
+                >.info {
+                    padding: 1% 0;
+                }
+            }
+        }
+    }
 }

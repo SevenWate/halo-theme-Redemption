@@ -80,6 +80,21 @@
             }
         }
     }
+    // =========== 768px 设备 ===========
+    @media (min-width: 320px) and (max-width: 768px) {
+        >ul {
+            padding: 2.5% 1%;
+
+            >.name {
+                padding: 2.5% 0;
+            }
+
+            >li {
+                justify-content: space-between;
+            }
+        }
+
+    }
 }
 
 
@@ -135,6 +150,16 @@
 
     // =========== 320px 设备 ===========
     @media (max-width: 320px) {
+        margin: 7% 0;
+
+        >ul {
+            >li {
+                margin: 2.5% 2.5%;
+            }
+        }
+    }
+    // =========== 768px 设备 ===========
+    @media (min-width: 320px) and (max-width: 768px) {
         margin: 7% 0;
 
         >ul {

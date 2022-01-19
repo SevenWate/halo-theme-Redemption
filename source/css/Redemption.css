@@ -5,7 +5,12 @@ html {
 }
 @media (max-width: 320px) {
   html {
-    font-size: 18px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  html {
+    font-size: 16px;
   }
 }
 
@@ -76,13 +81,44 @@ main {
 }
 @media (max-width: 320px) {
   main {
-    width: 95%;
+    width: 90%;
     margin-top: 3%;
     padding-bottom: 7%;
   }
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  main {
+    width: 90%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+}
 
 @media (max-width: 320px) {
+  main > .index,
+main > .archives,
+main > .categories,
+main > .category,
+main > .links,
+main > .post,
+main > .tag,
+main > .journals {
+    width: 90%;
+    padding: 2.5% 5%;
+  }
+  main > .index > ul,
+main > .archives > ul,
+main > .categories > ul,
+main > .category > ul,
+main > .links > ul,
+main > .post > ul,
+main > .tag > ul,
+main > .journals > ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
   main > .index,
 main > .archives,
 main > .categories,
@@ -215,6 +251,19 @@ main > .journals > ul {
     align-items: center;
   }
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 17% 5% 5% 5%;
+  }
+  .header > .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 footer .copyright {
   display: flex;
@@ -237,6 +286,11 @@ footer .copyright a:hover {
   }
 }
 @media (max-width: 320px) {
+  footer {
+    padding: 5% 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
   footer {
     padding: 5% 0;
   }
@@ -267,8 +321,19 @@ footer .copyright a:hover {
     padding: 5% 0 7% 0;
   }
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .pagenav {
+    padding: 4% 0 5% 0;
+  }
+}
 
 @media (max-width: 320px) {
+  .comment {
+    width: 90%;
+    margin: 5% 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
   .comment {
     width: 90%;
     margin: 5% 0;
@@ -303,6 +368,13 @@ footer .copyright a:hover {
   .post-bottom-menu {
     margin-top: 7%;
     padding-top: 7%;
+    width: 80%;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .post-bottom-menu {
+    margin-top: 7%;
+    padding-top: 5%;
     width: 80%;
   }
 }
@@ -375,6 +447,20 @@ footer .copyright a:hover {
     display: none;
   }
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .archives > ul {
+    padding: 2.5% 1%;
+  }
+  .archives > ul > .year {
+    padding: 2.5% 0;
+  }
+  .archives > ul > .title {
+    padding: 2.5% 0;
+  }
+  .archives > ul > li {
+    justify-content: space-between;
+  }
+}
 
 /* 
  *
@@ -435,6 +521,17 @@ footer .copyright a:hover {
     display: none;
   }
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .category > ul {
+    padding: 2.5% 1%;
+  }
+  .category > ul > .name {
+    padding: 2.5% 0;
+  }
+  .category > ul > li {
+    justify-content: space-between;
+  }
+}
 
 .categories > ul {
   display: flex;
@@ -470,6 +567,14 @@ footer .copyright a:hover {
   }
 }
 @media (max-width: 320px) {
+  .categories {
+    margin: 7% 0;
+  }
+  .categories > ul > li {
+    margin: 2.5% 2.5%;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
   .categories {
     margin: 7% 0;
   }
@@ -557,6 +662,17 @@ footer .copyright a:hover {
     margin: 1% 1%;
   }
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .index > h1 {
+    margin-block-start: 0;
+  }
+  .index > .info {
+    padding: 1% 0 2% 0;
+  }
+  .index > .info > span {
+    margin: 1% 1%;
+  }
+}
 
 .journals > .name {
   font-size: 1.5rem;
@@ -590,6 +706,14 @@ footer .copyright a:hover {
     padding: 2.5% 0;
     text-align: center;
   }
+  .journals > ul > li {
+    padding: 2.5% 0;
+  }
+  .journals > ul > li > .info {
+    padding: 1% 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
   .journals > ul > li {
     padding: 2.5% 0;
   }
@@ -641,6 +765,17 @@ footer .copyright a:hover {
     padding-bottom: 1%;
   }
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .links > ul {
+    padding: 2.5% 1%;
+  }
+  .links > ul > .friend {
+    padding: 2.5% 0;
+  }
+  .links > ul > li {
+    padding-bottom: 1%;
+  }
+}
 
 .post > .title > h1 > a {
   letter-spacing: 0.0625rem;
@@ -653,7 +788,6 @@ footer .copyright a:hover {
 }
 .post > .title > .info {
   display: flex;
-  flex-direction: column;
   border-bottom: 1px solid #d9d9d9;
 }
 .post > .title > .info > span {
@@ -675,6 +809,7 @@ footer .copyright a:hover {
   }
   .post > .title > .info {
     border-bottom: 1px solid #434343;
+    flex-direction: column;
   }
   .post > .title > .info span {
     color: #7d7d7d;
@@ -684,6 +819,14 @@ footer .copyright a:hover {
   }
 }
 @media (max-width: 320px) {
+  .post > .title {
+    margin-top: 10%;
+  }
+  .post > .title > .info > span {
+    padding: 1% 1%;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
   .post > .title {
     margin-top: 10%;
   }
@@ -771,6 +914,14 @@ footer .copyright a:hover {
   }
 }
 @media (max-width: 320px) {
+  .tags {
+    margin: 7% 0;
+  }
+  .tags > ul > li {
+    margin: 2.5% 2.5%;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
   .tags {
     margin: 7% 0;
   }

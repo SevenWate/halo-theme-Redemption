@@ -65,9 +65,16 @@ main {
 
   // 320px 设备
   @media (max-width: 320px) {
-    width: 95%;
+    width: 90%;
     margin-top: 3%;
     padding-bottom: 7%;
+  }
+
+  // 768px 设备
+  @media (min-width: 320px) and (max-width: 768px) {
+    width: 90%;
+    margin-top: 5%;
+    padding-bottom: 5%;
   }
 }
 
@@ -83,6 +90,17 @@ main>.journals {
 
   // 320px 设备
   @media (max-width: 320px) {
+    >ul {
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+
+    width: 90%;
+    padding: 2.5% 5%;
+  }
+
+  // 768px 设备
+  @media (min-width: 320px) and (max-width: 768px) {
     >ul {
       margin-block-start: 0;
       margin-block-end: 0;

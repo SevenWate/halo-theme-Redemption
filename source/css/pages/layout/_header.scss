@@ -87,4 +87,18 @@
             align-items: center;
         }
     }
+
+    // 768px 设备
+    @media (min-width: 320px) and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 17% 5% 5% 5%;
+
+        >.description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

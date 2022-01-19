@@ -35,4 +35,9 @@ footer {
     @media (max-width: 320px) {
         padding: 5% 0;
     }
+    
+    // 768px 设备
+    @media (min-width: 320px) and (max-width: 768px) {
+        padding: 5% 0;
+    }
 }

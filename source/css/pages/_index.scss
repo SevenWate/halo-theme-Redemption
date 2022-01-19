@@ -105,4 +105,18 @@
             }
         }
     }
+
+    // =========== 768px 设备 ===========
+    @media (min-width: 320px) and (max-width: 768px) {
+        >h1{
+            margin-block-start: 0;
+        }
+        >.info {
+            padding: 1% 0 2% 0;
+
+            >span {
+                margin: 1% 1%;
+            }
+        }
+    }
 }
