@@ -3,21 +3,11 @@
 // 友链
 .links {
     >ul {
-        padding: 0.625rem 0.1rem;
-
         >.friend {
             font-size: 1.5rem;
             font-weight: bold;
             line-height: 2.2rem;
-            padding: 0.5rem 0;
-
-            // 浅色
             color: #262626;
-
-            // 深色
-            @include darkmode {
-                color: #dbdbdb;
-            }
         }
 
         >li {
@@ -28,21 +18,49 @@
             line-height: 1.5rem;
 
             >a {
-                // 浅色
                 color: #595959;
 
                 &:hover {
                     color: #59595980;
                 }
+            }
+        }
+    }
 
-                // 深色
-                @include darkmode {
+    // =========== 深色 ===========
+    @include darkmode {
+        >ul {
+            >.friend {
+                color: #dbdbdb;
+            }
+
+            >li {
+                >a {
                     color: #dbdbdb;
 
                     &:hover {
                         color: #dbdbdb80;
                     }
                 }
+            }
+
+        }
+
+    }
+
+    // =========== 320px 设备 ===========
+    @media (max-width: 320px) {
+        >ul {
+            padding: 2.5% 1%;
+
+            >.friend {
+                padding: 2.5% 0;
+                text-align: center;
+            }
+
+            >li {
+                justify-content: center;
+                padding-bottom: 1%;
             }
         }
     }

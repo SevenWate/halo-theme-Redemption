@@ -2,29 +2,37 @@
 @import "../../base/variables";
 
 footer {
-    padding: 2rem 0;
-
     .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 0.8rem;
 
         a {
-            margin: 0 0.125rem;
-
-            // 浅色
             color: #bfbfbf;
+
             &:hover {
                 color: #262626;
             }
 
-            // 深色
-            @include darkmode{
+        }
+    }
+
+    // 深色
+    @include darkmode {
+        .copyright> {
+            >a {
                 color: #262626;
 
                 &:hover {
                     color: #bfbfbf;
                 }
             }
-
         }
+    }
+
+    // 320px 设备
+    @media (max-width: 320px) {
+        padding: 5% 0;
     }
 }

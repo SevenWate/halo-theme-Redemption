@@ -6,30 +6,14 @@
         font-size: 1.5rem;
         font-weight: bold;
         line-height: 2.2rem;
-        padding: 0.5rem 0;
-        // 浅色
         color: #262626;
-
-        // 深色
-        @include darkmode {
-            color: #dbdbdb;
-        }
     }
 
     >ul {
         >li {
-            padding: 1rem 0.1rem;
-
             >.content {
-                padding: 0.25rem 0.25rem;
                 font-size: 1rem;
-                // 浅色
                 color: #595959;
-
-                // 深色
-                @include darkmode {
-                    color: #acacac;
-                }
             }
 
             >.info {
@@ -37,9 +21,42 @@
                 justify-content: flex-end;
                 font-size: 0.75rem;
                 color: #8c8c8c;
+            }
+        }
+    }
 
-                @include darkmode {
+    // =========== 深色 ===========
+    @include darkmode {
+        >.name {
+            color: #dbdbdb;
+        }
+
+        >ul {
+            >li {
+                >.content {
+                    color: #acacac;
+                }
+
+                >.info {
                     color: #7d7d7d;
+                }
+            }
+        }
+    }
+
+    // =========== 320px 设备 ===========
+    @media (max-width: 320px) {
+        >.name {
+            padding: 2.5% 0;
+            text-align: center;
+        }
+
+        >ul {
+            >li {
+                padding: 2.5% 0;
+
+                >.info {
+                    padding: 1% 0;
                 }
             }
         }

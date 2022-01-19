@@ -3,8 +3,6 @@
 // 文章
 .post {
     >.title {
-        margin-top: 4rem;
-
         >h1 {
             >a {
                 letter-spacing: 0.0625rem;
@@ -12,49 +10,72 @@
                 line-height: 2rem;
                 color: #262626;
 
-                @include darkmode {
-                    color: #dbdbdb;
-                }
-
                 &:hover {
                     color: #26262680;
-
-                    @include darkmode {
-                        color: #dbdbdb80;
-                    }
                 }
             }
         }
 
         >.info {
-            padding-bottom: 1rem;
-            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
             border-bottom: 1px solid #d9d9d9;
 
-            @include darkmode {
-                border-bottom: 1px solid #434343;
-            }
-
             >span {
-                margin: 0 0.25rem;
                 font-weight: 400;
                 font-size: 0.75rem;
                 color: #8c8c8c;
 
-                @include darkmode {
-                    color: #7d7d7d;
-                }
+
 
                 i {
                     position: relative;
                     top: 0.125rem;
                     color: #8c8c8c;
 
-                    @include darkmode {
+
+                }
+            }
+        }
+    }
+    // =========== 深色 ===========
+    @include darkmode {
+        >.title {
+            >h1 {
+                >a {
+                    color: #dbdbdb;
+
+                    :hover {
+                        color: #dbdbdb80;
+                    }
+                }
+            }
+
+            >.info {
+                border-bottom: 1px solid #434343;
+
+                span {
+                    color: #7d7d7d;
+
+                    i {
                         color: #7d7d7d;
                     }
                 }
             }
         }
+    }
+
+    // =========== 320px 设备 ===========
+    @media (max-width: 320px) {
+        >.title {
+            margin-top: 10%;
+            >.info{
+                >span{
+                    padding: 1% 1%;
+                }
+                
+            }
+        }
+        
     }
 }

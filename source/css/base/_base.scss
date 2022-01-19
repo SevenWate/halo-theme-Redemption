@@ -10,7 +10,6 @@ html {
   ::-webkit-scrollbar-thumb {
     height: 40px;
     border-radius: 16px;
-    // 浅色
     background-color: rgba(0, 0, 0, 0.249);
 
     @include darkmode {
@@ -21,11 +20,9 @@ html {
 
   ::-webkit-scrollbar-thumb {
     &:hover {
-      // 浅色
       background-color: rgba(0, 0, 0, 0.249);
 
       @include darkmode {
-        // 深色
         background-color: blue;
       }
     }
@@ -34,18 +31,16 @@ html {
 
 // body
 body {
-  // 浅色
   background-color: #f7f7f7;
   color: #333333;
 
-  // 深色
   @include darkmode {
     background-color: #3d3d3d;
     color: #a3a3a3;
   }
 }
 
-// container
+// container 主容器
 .container {
   display: flex;
   flex-wrap: nowrap;
@@ -53,98 +48,114 @@ body {
   align-items: center;
 }
 
-// main
+// main 
 main {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
-  width: 52rem;
-  margin-top: 4rem;
-  padding-bottom: 3rem;
-  // 浅色
   background: #ffffff;
-  box-shadow: 0 0.375rem 1rem -0.5rem rgb(0, 0, 0,0.17);
+  box-shadow: 0 0.375rem 1rem -0.5rem rgb(0, 0, 0, 0.17);
 
-  // 深色
+  // 深色模式 
   @include darkmode {
     background: #292929;
-    box-shadow: 0 0.375rem 1rem -0.5rem rgb(0, 0, 0,0.34);
+    box-shadow: 0 0.375rem 1rem -0.5rem rgb(0, 0, 0, 0.34);
+  }
+
+  // 320px 设备
+  @media (max-width: 320px) {
+    width: 95%;
+    margin-top: 3%;
+    padding-bottom: 7%;
   }
 }
 
-// pages
-main > .index,
-main > .archives,
-main > .categories,
-main > .category,
-main > .links,
-main > .post,
-main > .tag,
-main > .journals {
-  width: 45rem;
-  padding: 1rem 0.1rem 1rem 0.1rem;
+// 页面宽度
+main>.index,
+main>.archives,
+main>.categories,
+main>.category,
+main>.links,
+main>.post,
+main>.tag,
+main>.journals {
+
+  // 320px 设备
+  @media (max-width: 320px) {
+    >ul {
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+
+    width: 90%;
+    padding: 2.5% 5%;
+  }
 }
 
-.menu{
-    position: fixed;
-    right: 0.5rem;
-    bottom: 10rem;
+
+// 菜单 临时使用
+.menu {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 10rem;
+  font-size: 0.5rem;
 }
 
-.close {
-  display: none;
-}
 
-/*animation starts*/
+
+
+
+
+
+
+
+// 全局动画
 
 @-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-3px);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-3px);
+  }
 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
 }
 
 @-moz-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -moz-transform: translateY(-3px);
-    }
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-3px);
+  }
 
-    100% {
-        opacity: 1;
-        -moz-transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
 }
 
 @-o-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -o-transform: translateY(-3px);
-    }
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-3px);
+  }
 
-    100% {
-        opacity: 1;
-        -o-transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
 }
 
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-3px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-
-/*animation ends*/

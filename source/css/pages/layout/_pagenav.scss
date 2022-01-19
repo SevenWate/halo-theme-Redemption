@@ -2,7 +2,6 @@
 .pagenav {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
 
     >a {
         text-decoration: none;
@@ -12,13 +11,21 @@
         &:hover {
             color: #595959;
         }
+    }
 
-        @include darkmode {
+    // =========== 深色 ===========
+    @include darkmode {
+        >a {
             color: #b6b6b6;
 
             &:hover {
                 color: #434343;
             }
         }
+    }
+
+    // =========== 320px 设备 ===========
+    @media (max-width: 320px) {
+        padding: 5% 0 7% 0;
     }
 }

@@ -1,49 +1,89 @@
- // 归档
-
+/* 
+ *
+ * 归档页面
+ * 
+ * 按照顺序
+ * 1.默认
+ * 2.深色
+ * 3.媒体查询
+ *   - 320px
+*/
 @import "../base/variables";
 
 .archives {
     >ul {
-        padding: 0.625rem 0.1rem;
-
         >.year {
             font-size: 1.5rem;
             font-weight: bold;
             line-height: 2.2rem;
-            padding: 0.5rem 0;
-            // 浅色
             color: #262626;
-            // 深色
-            @include darkmode{
-                color: #dbdbdb;
-            }
         }
 
         >li {
             display: flex;
-            justify-content: space-between;
             font-size: 0.875rem;
             padding-bottom: 0.3rem;
             line-height: 1.75rem;
 
-            > a {
-                // 浅色
-                color:#595959;
+            >a {
+                color: #595959;
+
                 &:hover {
                     color: #59595980;
                 }
-                // 深色
-                @include darkmode{
+            }
+
+            >span {
+                color: #8c8c8c;
+            }
+        }
+    }
+
+    // =========== 深色 ===========
+    @include darkmode {
+        >ul {
+
+            >.year {
+                color: #dbdbdb;
+            }
+
+            >li {
+                >a {
                     color: #acacac;
+
                     &:hover {
                         color: #acacac80;
                     }
                 }
-            }
-            >span{
-                color:#8c8c8c;
-                @include darkmode{
+
+                >span {
                     color: #7d7d7d;
+                }
+            }
+        }
+    }
+
+    // =========== 320px 设备 ===========
+    @media (max-width: 320px) {
+
+        >ul {
+            padding: 2.5% 1%;
+
+            >.year {
+                padding: 2.5% 0;
+                text-align: center;
+            }
+
+            >.title {
+                padding: 2.5% 0;
+                text-align: center;
+            }
+
+            >li {
+                justify-content: center;
+
+                >span {
+                    display: none;
                 }
             }
         }

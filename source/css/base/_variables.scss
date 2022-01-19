@@ -1,10 +1,9 @@
+// 自动 浅色、暗色 模式
+// 默认跟随系统自动开启
+
 $darkmode: true !default; // true | false | 'manual'
 $manualmode-auto-selector: '[data-darkmode="auto"] &' !default;
 $manualmode-dark-selector: '[data-darkmode="dark"] &' !default;
-
-
-
-
 
 @mixin darkmode($darkmode: $darkmode, $dark-selector: $manualmode-dark-selector, $auto-selector: $manualmode-auto-selector) {
     // darkmode = ture  : 跟随系统
@@ -29,19 +28,6 @@ $manualmode-dark-selector: '[data-darkmode="dark"] &' !default;
     }
 }
 
-
-
-// 超小屏幕（手机，小于 768px）
-// @media (max-width: 768px) { ... }
- 
-// 小屏幕（平板，大于等于 768px）
-// @media (min-width: 768px) and (max-width: 768px) { ... }
- 
-// 中等屏幕（桌面显示器，大于等于 992px）
-// @media (min-width: 992px) and (max-width: 992px) { ... }
- 
-// 大屏幕（大桌面显示器，大于等于 1200px）
-// @media (min-width: 1200px) { ... }
 
 
 

@@ -1,17 +1,23 @@
 @charset "UTF-8";
 
-body {
-    font-size: 16px;
+html {
     font-variant-numeric: tabular-nums;
     -webkit-font-smoothing: antialiased;
+    // 320px 设备
+    @media (max-width: 320px) {
+        font-size: 18px;
+    }
 }
 
+// 衬线字体
 [data-font="serif"]{
     font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
         'Noto Sans', serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
     font-weight: 500;
 }
+
+// 无衬线字体
 [data-font="sans"]{
     font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
     'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',

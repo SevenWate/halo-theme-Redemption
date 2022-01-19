@@ -9,20 +9,10 @@
             letter-spacing: 0.0625rem;
             font-size: 1.375rem;
             line-height: 1.75rem;
-            // 浅色
             color: #262626;
 
             &:hover {
                 color: #26262680;
-            }
-
-            // 深色
-            @include darkmode {
-                color: #dbdbdb;
-
-                &:hover {
-                    color: #dbdbdb80;
-                }
             }
         }
     }
@@ -31,14 +21,7 @@
     >p {
         line-height: 1.5rem;
         text-indent: 2rem;
-
-        // 浅色
         color: #595959;
-
-        // 深色
-        @include darkmode {
-            color: #acacac;
-        }
     }
 
     // 徽标
@@ -47,30 +30,17 @@
         justify-content: flex-end;
         flex-wrap: wrap;
         flex-direction: row;
-        padding: 0.5rem 0 2rem 0;
-
-        // 浅色
         border-bottom: 1px solid #d9d9d9;
-
-        // 深色
-        @include darkmode {
-            border-bottom: 1px solid #434343;
-        }
 
         >.date,
         >.tag {
             font-weight: 400;
             font-size: 0.75rem;
-            margin: 0 0.5rem;
 
             >i {
                 position: relative;
                 top: 0.1rem;
                 color: #8c8c8c;
-
-                @include darkmode {
-                    color: #7d7d7d;
-                }
             }
 
             >a {
@@ -80,8 +50,36 @@
                 &:hover {
                     color: #8c8c8c80;
                 }
+            }
+        }
+    }
 
-                @include darkmode {
+    // =========== 深色 ===========
+    @include darkmode {
+        >h1 {
+            >a {
+                color: #dbdbdb;
+
+                &:hover {
+                    color: #dbdbdb80;
+                }
+            }
+        }
+
+        >p {
+            color: #acacac;
+        }
+
+        >.info {
+            border-bottom: 1px solid #434343;
+
+            >.date,
+            >.tag {
+                >i {
+                    color: #7d7d7d;
+                }
+
+                >a {
                     color: #7d7d7d;
 
                     &:hover {
@@ -89,7 +87,22 @@
                     }
                 }
             }
+        }
 
+    }
+
+    // =========== 320px 设备 ===========
+    @media (max-width: 320px) {
+        >h1{
+            margin-block-start: 0;
+            text-align: center;
+        }
+        >.info {
+            padding: 1% 0 2% 0;
+
+            >span {
+                margin: 1% 1%;
+            }
         }
     }
 }

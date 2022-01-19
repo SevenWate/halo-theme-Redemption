@@ -1,22 +1,18 @@
-// 评论组件
+// 评论容器
 .comment {
-    width: 52rem;
-    margin: 1rem 0rem;
+
+    // 320px 设备
+    @media (max-width: 320px) {
+        width: 90%;
+        margin: 5% 0;
+    }
 }
 
+// 评论 首页 按钮
 .post-bottom-menu {
-
     display: flex;
     justify-content: space-around;
-    margin-top: 2rem;
-    padding-top: 2rem;
-    width: 40rem;
-
     border-top: 1px solid #e7e7e7;
-
-    @include darkmode {
-        border-top: 1px solid #e7e7e7;
-    }
 
     >a {
         color: #262626;
@@ -25,16 +21,36 @@
             color: #595959;
         }
 
-        @include darkmode {
-            color: #b6b6b6;
 
-            &:hover {
-                color: #434343;
+    }
+
+    // 深色
+    @include darkmode {
+        border-top: 1px solid #e7e7e7;
+
+        >a {
+
+            // 深色
+            @include darkmode {
+                color: #b6b6b6;
+
+                &:hover {
+                    color: #434343;
+                }
             }
         }
     }
+
+    // 320px 设备
+    @media (max-width: 320px) {
+
+        margin-top: 7%;
+        padding-top: 7%;
+        width: 80%;
+
+    }
 }
 
-
-
-
+.close {
+    display: none;
+}
