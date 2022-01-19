@@ -63,12 +63,32 @@
     }
     // =========== 768px 设备 ===========
     @media (min-width: 320px) and (max-width: 768px) {
+        >.name {
+            padding: 2.5% 0;
+            text-align: center;
+        }
         >ul {
             >li {
                 padding: 2.5% 0;
 
                 >.info {
                     padding: 1% 0;
+                }
+            }
+        }
+    }
+
+    // =========== 2048px 设备 ===========
+    @media (min-width: 768px) and (max-width: 2048px) {
+        >.name {
+            padding: 0.5rem 0;
+        }
+        >ul {
+            >li {
+                padding: 1rem 0.1rem;
+
+                >.info {
+                    padding: 1rem 0;
                 }
             }
         }

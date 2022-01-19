@@ -95,6 +95,20 @@
         }
 
     }
+
+    // =========== 2048px 设备 ===========
+    @media (min-width: 768px) and (max-width: 2048px) {
+        >ul {
+            padding: 0.625rem 0.1rem;
+            >.name {
+                padding: 0.5rem 0;
+            }
+            >li {
+                justify-content: space-between;
+                padding-bottom: 0.3rem;
+            }
+        }
+    }
 }
 
 
@@ -165,6 +179,19 @@
         >ul {
             >li {
                 margin: 2.5% 2.5%;
+            }
+        }
+    }
+
+    // =========== 2048px 设备 ===========
+    @media (min-width: 768px) and (max-width: 2048px) {
+        margin: 5rem 0;
+
+        >ul {
+            
+            >li {
+                margin: 0.5rem 1rem;
+                
             }
         }
     }

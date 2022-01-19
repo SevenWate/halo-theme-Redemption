@@ -40,4 +40,11 @@ footer {
     @media (min-width: 320px) and (max-width: 768px) {
         padding: 5% 0;
     }
+
+    // 2048px 设备
+    @media (min-width: 768px) and (max-width: 2048px) {
+        padding: 2rem 0;
+    }
+
+    
 }

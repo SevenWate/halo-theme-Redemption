@@ -12,6 +12,12 @@
         width: 90%;
         margin: 5% 0;
     }
+
+    // =========== 2048px 设备 ===========
+    @media (min-width: 768px) and (max-width: 2048px) {
+        margin-top: 2rem;
+        width: 52rem;
+    }
 }
 
 // 评论 首页 按钮
@@ -53,11 +59,19 @@
         padding-top: 7%;
         width: 80%;
     }
+
     // =========== 768px 设备 ===========
     @media (min-width: 320px) and (max-width: 768px) {
         margin-top: 7%;
         padding-top: 5%;
         width: 80%;
+    }
+
+    // =========== 2048px 设备 ===========
+    @media (min-width: 768px) and (max-width: 2048px) {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        width: 40rem;
     }
 }
 

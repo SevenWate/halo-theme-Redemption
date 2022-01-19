@@ -3,6 +3,7 @@
 html {
     font-variant-numeric: tabular-nums;
     -webkit-font-smoothing: antialiased;
+
     // =========== 320px 设备 ===========
     @media (max-width: 320px) {
         font-size: 14px;
@@ -12,10 +13,15 @@ html {
     @media (min-width: 320px) and (max-width: 768px) {
         font-size: 16px;
     }
+
+    // =========== 2048px 设备 ===========
+    @media (min-width: 768px) and (max-width: 2048px) {
+        font-size: 16px;
+    }
 }
 
 // 衬线字体
-[data-font="serif"]{
+[data-font="serif"] {
     font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
         'Noto Sans', serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
@@ -23,9 +29,9 @@ html {
 }
 
 // 无衬线字体
-[data-font="sans"]{
+[data-font="sans"] {
     font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
     font-weight: 400;
 }

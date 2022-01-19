@@ -93,10 +93,11 @@
 
     // =========== 320px 设备 ===========
     @media (max-width: 320px) {
-        >h1{
+        >h1 {
             margin-block-start: 0;
             text-align: center;
         }
+
         >.info {
             padding: 1% 0 2% 0;
 
@@ -108,15 +109,24 @@
 
     // =========== 768px 设备 ===========
     @media (min-width: 320px) and (max-width: 768px) {
-        >h1{
+        >h1 {
             margin-block-start: 0;
         }
+
         >.info {
             padding: 1% 0 2% 0;
 
             >span {
                 margin: 1% 1%;
             }
+        }
+    }
+
+    // =========== 2048px 设备 ===========
+    @media (min-width: 768px) and (max-width: 2048px) {
+
+        >.info {
+            padding: 0.5rem 0 2rem 0;
         }
     }
 }

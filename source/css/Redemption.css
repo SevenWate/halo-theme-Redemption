@@ -13,6 +13,11 @@ html {
     font-size: 16px;
   }
 }
+@media (min-width: 768px) and (max-width: 2048px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 [data-font=serif] {
   font-family: -apple-system, BlinksMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -93,6 +98,13 @@ main {
     padding-bottom: 5%;
   }
 }
+@media (min-width: 768px) and (max-width: 2048px) {
+  main {
+    width: 52rem;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+  }
+}
 
 @media (max-width: 320px) {
   main > .index,
@@ -140,6 +152,19 @@ main > .tag > ul,
 main > .journals > ul {
     margin-block-start: 0;
     margin-block-end: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 2048px) {
+  main > .index,
+main > .archives,
+main > .categories,
+main > .category,
+main > .links,
+main > .post,
+main > .tag,
+main > .journals {
+    width: 45rem;
+    padding: 1rem 0.1rem 1rem 0.1rem;
   }
 }
 
@@ -264,6 +289,21 @@ main > .journals > ul {
     align-items: center;
   }
 }
+@media (min-width: 768px) and (max-width: 2048px) {
+  .header {
+    width: 45rem;
+    padding: 7rem 0 3rem 0;
+    justify-content: space-between;
+  }
+  .header > .title {
+    width: 6rem;
+  }
+  .header > .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
 
 footer .copyright {
   display: flex;
@@ -293,6 +333,11 @@ footer .copyright a:hover {
 @media (min-width: 320px) and (max-width: 768px) {
   footer {
     padding: 5% 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 2048px) {
+  footer {
+    padding: 2rem 0;
   }
 }
 
@@ -326,6 +371,11 @@ footer .copyright a:hover {
     padding: 4% 0 5% 0;
   }
 }
+@media (min-width: 768px) and (max-width: 2048px) {
+  .pagenav {
+    padding: 2rem 0;
+  }
+}
 
 @media (max-width: 320px) {
   .comment {
@@ -337,6 +387,12 @@ footer .copyright a:hover {
   .comment {
     width: 90%;
     margin: 5% 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 2048px) {
+  .comment {
+    margin-top: 2rem;
+    width: 52rem;
   }
 }
 
@@ -376,6 +432,13 @@ footer .copyright a:hover {
     margin-top: 7%;
     padding-top: 5%;
     width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 2048px) {
+  .post-bottom-menu {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    width: 40rem;
   }
 }
 
@@ -461,6 +524,18 @@ footer .copyright a:hover {
     justify-content: space-between;
   }
 }
+@media (min-width: 768px) and (max-width: 2048px) {
+  .archives > ul {
+    padding: 0.625rem 0.1rem;
+  }
+  .archives > ul > .year {
+    padding: 0.5rem 0;
+  }
+  .archives > ul > li {
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+  }
+}
 
 /* 
  *
@@ -532,6 +607,18 @@ footer .copyright a:hover {
     justify-content: space-between;
   }
 }
+@media (min-width: 768px) and (max-width: 2048px) {
+  .category > ul {
+    padding: 0.625rem 0.1rem;
+  }
+  .category > ul > .name {
+    padding: 0.5rem 0;
+  }
+  .category > ul > li {
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+  }
+}
 
 .categories > ul {
   display: flex;
@@ -580,6 +667,14 @@ footer .copyright a:hover {
   }
   .categories > ul > li {
     margin: 2.5% 2.5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 2048px) {
+  .categories {
+    margin: 5rem 0;
+  }
+  .categories > ul > li {
+    margin: 0.5rem 1rem;
   }
 }
 
@@ -673,6 +768,11 @@ footer .copyright a:hover {
     margin: 1% 1%;
   }
 }
+@media (min-width: 768px) and (max-width: 2048px) {
+  .index > .info {
+    padding: 0.5rem 0 2rem 0;
+  }
+}
 
 .journals > .name {
   font-size: 1.5rem;
@@ -714,11 +814,26 @@ footer .copyright a:hover {
   }
 }
 @media (min-width: 320px) and (max-width: 768px) {
+  .journals > .name {
+    padding: 2.5% 0;
+    text-align: center;
+  }
   .journals > ul > li {
     padding: 2.5% 0;
   }
   .journals > ul > li > .info {
     padding: 1% 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 2048px) {
+  .journals > .name {
+    padding: 0.5rem 0;
+  }
+  .journals > ul > li {
+    padding: 1rem 0.1rem;
+  }
+  .journals > ul > li > .info {
+    padding: 1rem 0;
   }
 }
 
@@ -774,6 +889,17 @@ footer .copyright a:hover {
   }
   .links > ul > li {
     padding-bottom: 1%;
+  }
+}
+@media (min-width: 768px) and (max-width: 2048px) {
+  .links > ul {
+    padding: 0.625rem 0.1rem;
+  }
+  .links > ul > .friend {
+    padding: 0.5rem 0;
+  }
+  .links > ul > li {
+    padding-bottom: 0.3rem;
   }
 }
 
@@ -834,6 +960,14 @@ footer .copyright a:hover {
     padding: 1% 1%;
   }
 }
+@media (min-width: 768px) and (max-width: 2048px) {
+  .post > .title {
+    margin-top: 4rem;
+  }
+  .post > .title > .info > span {
+    margin: 0.25rem 0.25rem;
+  }
+}
 
 .tag > ul > .name {
   font-size: 1.5rem;
@@ -877,6 +1011,18 @@ footer .copyright a:hover {
   }
   .tag > ul > li > span {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 2048px) {
+  .tag > ul {
+    padding: 0.625rem 0.1rem;
+  }
+  .tag > ul > .name {
+    padding: 0.5rem 0;
+  }
+  .tag > ul > li {
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
   }
 }
 
@@ -927,6 +1073,14 @@ footer .copyright a:hover {
   }
   .tags > ul > li {
     margin: 2.5% 2.5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 2048px) {
+  .tags {
+    margin: 5rem 0;
+  }
+  .tags > ul > li {
+    margin: 0.5rem 1rem;
   }
 }
 
