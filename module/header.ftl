@@ -1,6 +1,6 @@
 <div class="header">
     <div class="title">
-        <a href="${blog_url!}"><span>无尽光芒</span></a>
+        <a href="${blog_url!}"><span>救赎之路</span></a>
     </div>
     <div class="description">
         <p>${settings.sub_title!'the site subtitle'}</p>

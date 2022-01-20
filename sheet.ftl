@@ -23,7 +23,7 @@
                         <#elseif (timeago >= 604800000) && (timeago < 3153600000)>
                             发表于 ${(timeago / 604800000)?int} 周前
                         <#elseif (timeago >= 3153600000) && (timeago < 94608000000)>
-                            发表于 ${(timeago / 3153600000)?int} 年前
+                            发表于 ${(timeago / 3153600000)?int} 月前
                         <#elseif (timeago >= 94608000000)>
                             发表于很久很久以前 ~
                         </#if>

@@ -128,6 +128,14 @@ main > .journals {
   font-size: 0.5rem;
 }
 
+img {
+  width: 100% !important;
+}
+
+.heti {
+  max-width: 45rem !important;
+}
+
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -369,7 +377,8 @@ footer .copyright a:hover {
  * 1.默认
  * 2.深色
  * 3.媒体查询
- *   - 320px
+ *   - 870px
+ *   - 2048px
 */
 .archives > ul > .year {
   font-size: 1.5rem;
@@ -552,6 +561,17 @@ footer .copyright a:hover {
   }
 }
 
+/* 
+ *
+ * 首页
+ * 
+ * 按照顺序
+ * 1.默认
+ * 2.深色
+ * 3.媒体查询
+ *   - 870px
+ *   - 2048px
+*/
 .index > h1 > a {
   letter-spacing: 0.0625rem;
   font-size: 1.375rem;
@@ -636,6 +656,17 @@ footer .copyright a:hover {
   }
 }
 
+/* 
+ *
+ * 日志
+ * 
+ * 按照顺序
+ * 1.默认
+ * 2.深色
+ * 3.媒体查询
+ *   - 870px
+ *   - 2048px
+*/
 .journals > .name {
   font-size: 1.5rem;
   font-weight: bold;
@@ -687,6 +718,17 @@ footer .copyright a:hover {
   }
 }
 
+/* 
+ *
+ * 友链
+ * 
+ * 按照顺序
+ * 1.默认
+ * 2.深色
+ * 3.媒体查询
+ *   - 870px
+ *   - 2048px
+*/
 .links > ul > .friend {
   font-size: 1.5rem;
   font-weight: bold;
@@ -740,6 +782,17 @@ footer .copyright a:hover {
   }
 }
 
+/* 
+ *
+ * 文章
+ * 
+ * 按照顺序
+ * 1.默认
+ * 2.深色
+ * 3.媒体查询
+ *   - 870px
+ *   - 2048px
+*/
 .post > .title > h1 > a {
   letter-spacing: 0.0625rem;
   font-size: 2rem;
@@ -803,6 +856,17 @@ footer .copyright a:hover {
   }
 }
 
+/* 
+ *
+ * 标志
+ * 
+ * 按照顺序
+ * 1.默认
+ * 2.深色
+ * 3.媒体查询
+ *   - 870px
+ *   - 2048px
+*/
 .tag > ul > .name {
   font-size: 1.5rem;
   font-weight: bold;
