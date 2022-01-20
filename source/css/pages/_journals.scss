@@ -1,6 +1,15 @@
+/* 
+ *
+ * 日志
+ * 
+ * 按照顺序
+ * 1.默认
+ * 2.深色
+ * 3.媒体查询
+ *   - 870px
+ *   - 2048px
+*/
 @import "../base/variables";
-
-// 日志
 .journals {
     >.name {
         font-size: 1.5rem;
@@ -44,25 +53,8 @@
         }
     }
 
-    // =========== 320px 设备 ===========
-    @media (max-width: 320px) {
-        >.name {
-            padding: 2.5% 0;
-            text-align: center;
-        }
-
-        >ul {
-            >li {
-                padding: 2.5% 0;
-
-                >.info {
-                    padding: 1% 0;
-                }
-            }
-        }
-    }
-    // =========== 768px 设备 ===========
-    @media (min-width: 320px) and (max-width: 768px) {
+    // =========== 移动端 ===========
+    @media (max-width: 870px) {
         >.name {
             padding: 2.5% 0;
             text-align: center;
@@ -78,8 +70,8 @@
         }
     }
 
-    // =========== 2048px 设备 ===========
-    @media (min-width: 768px) and (max-width: 2048px) {
+    // =========== 桌面端 ===========
+    @media (min-width: 870px) and (max-width: 2048px) {
         >.name {
             padding: 0.5rem 0;
         }

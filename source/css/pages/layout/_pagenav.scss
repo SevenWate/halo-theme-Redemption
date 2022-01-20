@@ -24,18 +24,13 @@
         }
     }
 
-    // =========== 320px 设备 ===========
-    @media (max-width: 320px) {
-        padding: 5% 0 7% 0;
-    }
-
-    // =========== 768px 设备 ===========
-    @media (min-width: 320px) and (max-width: 768px) {
+    // // =========== 移动端 ===========
+    @media (max-width: 870px) {
         padding: 4% 0 5% 0;
     }
 
-    // =========== 2048px 设备 ===========
-    @media (min-width: 768px) and (max-width: 2048px) {
+    // // =========== 桌面端 ===========
+    @media (min-width: 870px) and (max-width: 2048px) {
         padding: 2rem 0;
     }
 }

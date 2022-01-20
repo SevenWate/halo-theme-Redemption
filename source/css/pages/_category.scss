@@ -6,7 +6,8 @@
  * 1.默认
  * 2.深色
  * 3.媒体查询
- *   - 320px
+ *   - 870px
+ *   - 2048px
 */
 @import "../base/variables";
 
@@ -61,27 +62,8 @@
         }
     }
 
-    // =========== 320px 设备 ===========
-    @media (max-width: 320px) {
-        >ul {
-            padding: 2.5% 1%;
-
-            >.name {
-                padding: 2.5% 0;
-                text-align: center;
-            }
-
-            >li {
-                justify-content: center;
-
-                >span {
-                    display: none;
-                }
-            }
-        }
-    }
-    // =========== 768px 设备 ===========
-    @media (min-width: 320px) and (max-width: 768px) {
+    // =========== 移动端 ===========
+    @media (max-width: 870px) {
         >ul {
             padding: 2.5% 1%;
 
@@ -96,8 +78,8 @@
 
     }
 
-    // =========== 2048px 设备 ===========
-    @media (min-width: 768px) and (max-width: 2048px) {
+    // =========== 桌面端 ===========
+    @media (min-width: 870px) and (max-width: 2048px) {
         >ul {
             padding: 0.625rem 0.1rem;
             >.name {
@@ -162,18 +144,8 @@
 
     }
 
-    // =========== 320px 设备 ===========
-    @media (max-width: 320px) {
-        margin: 7% 0;
-
-        >ul {
-            >li {
-                margin: 2.5% 2.5%;
-            }
-        }
-    }
-    // =========== 768px 设备 ===========
-    @media (min-width: 320px) and (max-width: 768px) {
+    // =========== 移动端 ===========
+    @media (max-width: 870px) {
         margin: 7% 0;
 
         >ul {
@@ -183,15 +155,14 @@
         }
     }
 
-    // =========== 2048px 设备 ===========
-    @media (min-width: 768px) and (max-width: 2048px) {
+    // =========== 桌面端 ===========
+    @media (min-width: 870px) and (max-width: 2048px) {
         margin: 5rem 0;
 
         >ul {
             
             >li {
                 margin: 0.5rem 1rem;
-                
             }
         }
     }

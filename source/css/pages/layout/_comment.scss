@@ -1,26 +1,20 @@
 // 评论容器
 .comment {
 
-    // 320px 设备
-    @media (max-width: 320px) {
+    // =========== 移动端 ===========
+    @media (max-width: 870px) {
         width: 90%;
         margin: 5% 0;
     }
 
-    // =========== 768px 设备 ===========
-    @media (min-width: 320px) and (max-width: 768px) {
-        width: 90%;
-        margin: 5% 0;
-    }
-
-    // =========== 2048px 设备 ===========
-    @media (min-width: 768px) and (max-width: 2048px) {
+    // =========== 桌面端 ===========
+    @media (min-width: 870px) and (max-width: 2048px) {
         margin-top: 2rem;
         width: 52rem;
     }
 }
 
-// 评论 首页 按钮
+// 评论、首页按钮
 .post-bottom-menu {
     display: flex;
     justify-content: space-around;
@@ -32,43 +26,30 @@
         &:hover {
             color: #595959;
         }
-
-
     }
 
-    // 深色
+    // =========== 深色 ===========
     @include darkmode {
         border-top: 1px solid #e7e7e7;
-
         >a {
+            color: #b6b6b6;
 
-            // 深色
-            @include darkmode {
-                color: #b6b6b6;
-
-                &:hover {
-                    color: #434343;
-                }
+            &:hover {
+                color: #434343;
             }
+
         }
     }
 
-    // =========== 320px 设备 ===========
-    @media (max-width: 320px) {
-        margin-top: 7%;
-        padding-top: 7%;
-        width: 80%;
-    }
-
-    // =========== 768px 设备 ===========
-    @media (min-width: 320px) and (max-width: 768px) {
+    // =========== 移动端 ===========
+    @media (max-width: 870px) {
         margin-top: 7%;
         padding-top: 5%;
         width: 80%;
     }
 
-    // =========== 2048px 设备 ===========
-    @media (min-width: 768px) and (max-width: 2048px) {
+    // =========== 桌面端 ===========
+    @media (min-width: 870px) and (max-width: 2048px) {
         margin-top: 2rem;
         padding-top: 2rem;
         width: 40rem;

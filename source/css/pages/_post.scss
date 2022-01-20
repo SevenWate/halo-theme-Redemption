@@ -1,6 +1,15 @@
+/* 
+ *
+ * 文章
+ * 
+ * 按照顺序
+ * 1.默认
+ * 2.深色
+ * 3.媒体查询
+ *   - 870px
+ *   - 2048px
+*/
 @import "../base/variables";
-
-// 文章
 .post {
     >.title {
         >h1 {
@@ -52,7 +61,6 @@
 
             >.info {
                 border-bottom: 1px solid #434343;
-                flex-direction: column;
                 span {
                     color: #7d7d7d;
 
@@ -64,37 +72,29 @@
         }
     }
 
-    // =========== 320px 设备 ===========
-    @media (max-width: 320px) {
+    // =========== 移动端 ===========
+    @media (min-width: 320px) and (max-width: 870px) {
         >.title {
             margin-top: 10%;
             >.info{
+                flex-direction: column;
                 >span{
                     padding: 1% 1%;
-                }
-                
-            }
-        }
-    }
-    // =========== 768px 设备 ===========
-    @media (min-width: 320px) and (max-width: 768px) {
-        >.title {
-            margin-top: 10%;
-            >.info{
-                >span{
-                    padding: 1% 1%;
+
                 }
             }
         }
     }
 
-    // =========== 2048px 设备 ===========
-    @media (min-width: 768px) and (max-width: 2048px) {
+    // =========== 桌面端 ===========
+    @media (min-width: 870px) and (max-width: 2048px) {
         >.title {
             margin-top: 4rem;
             >.info{
+                flex-direction: row;
                 >span{
                     margin: 0.25rem 0.25rem;
+
                 }
             }
         }
