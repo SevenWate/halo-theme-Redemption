@@ -6,7 +6,7 @@ author:
   website: https://7wate.com
 description: The road of Redemption
 logo: 
-website: 
-repo: 
-version: 0.0.0
+website: https://7wate.com
+repo: https://github.com/7Wate/Redemption
+version: 0.1.0
 require: 1.4.2

@@ -22,17 +22,17 @@ html ::-webkit-scrollbar {
 html ::-webkit-scrollbar-thumb {
   height: 40px;
   border-radius: 16px;
-  background-color: rgba(0, 0, 0, 0.249);
+  background-color: #0000003f;
 }
 html ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.249);
+  background-color: #0000003f;
 }
 @media (prefers-color-scheme: dark) {
   html ::-webkit-scrollbar-thumb {
-    background-color: blue;
+    background-color: #3d3030;
   }
   html ::-webkit-scrollbar-thumb:hover {
-    background-color: blue;
+    background-color: #acacac;
   }
 }
 

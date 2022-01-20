@@ -40,7 +40,7 @@
         <#--  <script charset="utf-8" src="${theme_base!}/source/plugins/halo.js"></script>  -->
 
     </body>
-    <#include "menu.ftl">
+    <#--  <#include "menu.ftl">  -->
 </html>
 </#macro>
 
