@@ -128,12 +128,11 @@ main > .journals {
   font-size: 0.5rem;
 }
 
-img {
-  width: 100% !important;
-}
-
 .heti {
   max-width: 45rem !important;
+}
+.heti > img {
+  width: 100% !important;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -654,6 +653,9 @@ footer .copyright a:hover {
   .index > .info {
     padding: 0.5rem 0 2rem 0;
   }
+  .index > .info > span {
+    padding: 0 0.5rem;
+  }
 }
 
 /* 
@@ -675,6 +677,7 @@ footer .copyright a:hover {
 }
 .journals > ul > li > .content {
   font-size: 1rem;
+  line-height: 1.5rem;
   color: #595959;
 }
 .journals > ul > li > .info {
@@ -739,7 +742,6 @@ footer .copyright a:hover {
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
-  padding-bottom: 0.3rem;
   line-height: 1.5rem;
 }
 .links > ul > li > a {
@@ -805,6 +807,7 @@ footer .copyright a:hover {
 .post > .title > .info {
   display: flex;
   border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 1rem;
 }
 .post > .title > .info > span {
   font-weight: 400;

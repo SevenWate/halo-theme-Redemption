@@ -28,10 +28,10 @@
             <footer>
 
                 <div class="copyright">
-                    <a href="https://www.7wate.com">Designed by 7Wate</a>
-                    <a href="https://halo.run">Proudly published with Halo</a>
+                    <@global.footer />
+
                 </div>
-                <@global.footer />
+                
             </footer>
             
         </div>

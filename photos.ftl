@@ -73,10 +73,6 @@
                                         <li><a href="${settings.github}" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
                                         </#if>
 
-                                        <#if settings.wechat??>
-                                            <li><a href="${settings.wechat}" target="_blank" class="icon brands fa-weixin"><span class="label">Wechat</span></a></li>
-                                        </#if>
-
                                         <#if settings.bilibili??>
                                             <li><a href="${settings.bilibili}"target="_blank" class="icon brands fa-instagram"><span class="label">Bilibili</span></a></li>
                                         </#if>
