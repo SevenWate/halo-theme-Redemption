@@ -4,6 +4,20 @@ html {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
 }
+@media (max-width: 870px) {
+  html {
+    font-size: 18px;
+    font-family: -apple-system, BlinksMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+  }
+}
+@media (min-width: 870px) and (max-width: 2048px) {
+  html {
+    font-size: 16px;
+    font-family: -apple-system, BlinksMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+  }
+}
 
 [data-font=serif] {
   font-family: -apple-system, BlinksMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -70,8 +84,8 @@ main {
 }
 @media (max-width: 870px) {
   main {
-    width: 90%;
-    margin-top: 5%;
+    width: 99%;
+    margin-top: 1%;
     padding-bottom: 5%;
   }
 }
@@ -977,4 +991,4 @@ footer .copyright a:hover {
   }
 }
 
-/*# sourceMappingURL=redemption.css.map */
+/*# sourceMappingURL=Redemption.css.map */
