@@ -1,22 +1,16 @@
 general:
   label: 基础设置
   items:
+    title:
+      name: title
+      label: 标题
+      type: text
+      default: 'the site'
     sub_title:
       name: sub_title
       label: 二级标题
       type: text
       default: 'the site subtitle'
-photos:
-  label: 图库设置
-  items:
-    photoTitle:
-      name: photoTitle
-      label: 标题
-      type: text
-    photodes:
-      name: photodes
-      label: 简述
-      type: textarea
 sns:
   label: 社交资料
   items:
@@ -32,3 +26,14 @@ sns:
       name: mail
       label: 邮箱
       type: text
+photos:
+  label: 图库设置
+  items:
+    photoTitle:
+      name: photoTitle
+      label: 标题
+      type: text
+    photodes:
+      name: photodes
+      label: 简述
+      type: textarea

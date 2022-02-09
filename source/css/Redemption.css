@@ -13,7 +13,7 @@ html {
 }
 @media (min-width: 870px) and (max-width: 2048px) {
   html {
-    font-size: 16px;
+    font-size: 17px;
     font-family: -apple-system, BlinksMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 400;
   }
@@ -273,16 +273,17 @@ footer .copyright {
   font-size: 0.8rem;
 }
 footer .copyright a {
+  padding: 0.1rem 0.1rem;
   color: #bfbfbf;
 }
 footer .copyright a:hover {
   color: #262626;
 }
 @media (prefers-color-scheme: dark) {
-  footer .copyright > > a {
+  footer .copyright > a {
     color: #262626;
   }
-  footer .copyright > > a:hover {
+  footer .copyright > a:hover {
     color: #bfbfbf;
   }
 }
@@ -330,7 +331,7 @@ footer .copyright a:hover {
 
 @media (max-width: 870px) {
   .comment {
-    width: 90%;
+    width: 99%;
     margin: 5% 0;
   }
 }
@@ -991,4 +992,8 @@ footer .copyright a:hover {
   }
 }
 
-/*# sourceMappingURL=Redemption.css.map */
+img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=redemption.css.map */

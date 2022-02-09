@@ -29,6 +29,10 @@
             <footer>
 
                 <div class="copyright">
+                    <a href="https://www.foreverblog.cn/" target="_blank" > 
+                        <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> 
+                    </a>
+                    <a href="https://halo.run">Designed by 7Wate . Proudly published with Halo</a>
                     <@global.footer />
 
                 </div>
@@ -36,9 +40,6 @@
             </footer>
             
         </div>
-
-        <#--  自定义JS代码  -->
-        <#--  <script charset="utf-8" src="${theme_base!}/source/plugins/halo.js"></script>  -->
 
     </body>
     <#--  <#include "menu.ftl">  -->
