@@ -4,9 +4,9 @@ name: Redemption
 author:
   name: 7Wate
   website: https://7wate.com
-description: The road of Redemption
+description: The road of Redemption | 救赎之路
 logo: 
 website: https://7wate.com
 repo: https://github.com/7Wate/Redemption
-version: 0.1.0
+version: 0.2.0
 require: 1.4.2

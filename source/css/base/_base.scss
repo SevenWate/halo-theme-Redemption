@@ -61,7 +61,7 @@ main {
   background: #ffffff;
   box-shadow: 0 0.375rem 1rem -0.5rem rgb(0, 0, 0, 0.17);
 
-  // =========== 深色 ===========
+  // =========== 暗模式 ===========
   @include darkmode {
     background: #292929;
     box-shadow: 0 0.375rem 1rem -0.5rem rgb(0, 0, 0, 0.34);
@@ -75,14 +75,13 @@ main {
   }
 
   // =========== 桌面端 ===========
-  @media (min-width: 870px) and (max-width: 2048px) {
-    width: 52rem;
-    margin-top: 4rem;
-    padding-bottom: 3rem;
+  @media (min-width: 870px) {
+    width: 61.8vw;
+    margin-top: 23.48vh;
+    padding-bottom: 7vh;
   }
 }
 
-// 页面宽度
 main>.index,
 main>.archives,
 main>.categories,
@@ -103,36 +102,12 @@ main>.journals {
   }
 
   // =========== 桌面端 ===========
-  @media (min-width: 870px) and (max-width: 2048px) {
-    width: 45rem;
-    padding: 1rem 0.1rem 1rem 0.1rem;
+  @media (min-width: 870px) {
+    width: 80%;
+    padding: 2rem 0rem 2rem 0rem;
   }
+
 }
-
-
-// 菜单 临时使用
-.menu {
-  position: fixed;
-  right: 0.5rem;
-  bottom: 10rem;
-  font-size: 0.5rem;
-}
-
-
-.heti{
-  max-width: 45rem!important;
-  > img{
-    width: 100%!important;
-  }
-}
-
-
-
-
-
-
-
-
 
 
 // 全局动画

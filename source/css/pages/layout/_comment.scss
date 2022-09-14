@@ -8,9 +8,9 @@
     }
 
     // =========== 桌面端 ===========
-    @media (min-width: 870px) and (max-width: 2048px) {
+    @media (min-width: 870px){
         margin-top: 2rem;
-        width: 52rem;
+        width: 61.8vw;
     }
 }
 
@@ -43,16 +43,15 @@
 
     // =========== 移动端 ===========
     @media (max-width: 870px) {
-        margin-top: 7%;
+        margin-top: 5%;
         padding-top: 5%;
         width: 80%;
     }
 
     // =========== 桌面端 ===========
-    @media (min-width: 870px) and (max-width: 2048px) {
-        margin-top: 2rem;
+    @media (min-width: 870px){
         padding-top: 2rem;
-        width: 40rem;
+        width: 77%;
     }
 }
 

@@ -6,8 +6,6 @@
  * 1.默认
  * 2.深色
  * 3.媒体查询
- *   - 870px
- *   - 2048px
 */
 @import "../base/variables";
 
@@ -79,7 +77,7 @@
     }
 
     // =========== 桌面端 ===========
-    @media (min-width: 870px) and (max-width: 2048px) {
+    @media (min-width: 870px) {
         >ul {
             padding: 0.625rem 0.1rem;
             >.name {
@@ -156,7 +154,7 @@
     }
 
     // =========== 桌面端 ===========
-    @media (min-width: 870px) and (max-width: 2048px) {
+    @media (min-width: 870px){
         margin: 5rem 0;
 
         >ul {

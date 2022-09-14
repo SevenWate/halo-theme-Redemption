@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="${theme_base!}/source/plugins/normalize.css"/>
         <link rel="stylesheet" href="${theme_base!}/source/plugins/animate.css"/>
         <link rel="stylesheet" href="${theme_base!}/source/plugins/remixicon/remixicon.css"/>
-        <link rel="stylesheet" href="${theme_base!}/source/plugins/heti/heti.min.css"/>
         
         <#--  自定义样式表  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/Redemption.css"/>
@@ -30,7 +29,7 @@
 
                 <div class="copyright">
                     <a href="https://www.foreverblog.cn/" target="_blank" > 
-                        <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:16px;"> 
+                        <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width:auto;height:1.25rem;"> 
                     </a>
                     <a href="https://halo.run">Designed by 7Wate . Proudly published with Halo</a>
                     <@global.footer />
@@ -42,7 +41,6 @@
         </div>
 
     </body>
-    <#--  <#include "menu.ftl">  -->
 </html>
 </#macro>
 
