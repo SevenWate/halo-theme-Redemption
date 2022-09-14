@@ -40,7 +40,7 @@
                     </span>
                 </div>
             </div>
-            <div class="heti">
+            <div class="markdown">
                 ${sheet.formatContent!}
             </div>
         </div>
