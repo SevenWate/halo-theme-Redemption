@@ -39,7 +39,7 @@
                         <#list photos.content as photo>
                             <article id="${photo.id!}" class="thumb">
                                 <a href="${photo.url!}" class="image">
-                                    <img src="${photo.url!}" alt="" />
+                                    <img src="${photo.thumbnail!}" alt="" />
                                 </a>
                                 <h2>${photo.name!}</h2>
                                 <p>${photo.description!}</p>
