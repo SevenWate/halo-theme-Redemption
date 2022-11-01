@@ -5,15 +5,46 @@ general:
       name: title
       label: 标题
       type: text
-      default: 'the site'
+      default: '救赎之路'
     sub_title:
       name: sub_title
-      label: 二级标题
+      label: 短语
       type: text
-      default: 'the site subtitle'
+      default: 'Always For Freedom'
+    footer_title:
+      name: footer_title
+      label: 脚注
+      type: text
+      default: 'Designed by 7Wate . Proudly published with Halo'
+    open_kaiwang:
+      name: open_kaiwang
+      label: 是否显示开往
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 显示
+        - value: false
+          label: 关闭
+    open_foreverblog:
+      name:  open_foreverblog
+      label: 是否显示十年之约
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 显示
+        - value: false
+          label: 关闭
 sns:
-  label: 社交资料
+  label: 社交链接
   items:
+    about:
+      name: github
+      label: 关于
+      type: text
     github:
       name: github
       label: Github
@@ -26,14 +57,42 @@ sns:
       name: mail
       label: 邮箱
       type: text
+comment:
+  label: 评论设置
+  items:
+    open_comment:
+      name:  open_comment
+      label: 是否开启评论
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 显示
+        - value: false
+          label: 关闭
+      description: '开启评论需要编辑 /source/plugins/comment/halo-comment.min.js 搜索 baseUrl 关键字.
+      {baseUrl:"https://blog.7wate.com/"} 并将双引号内地址改为自己博客地址即可正常开启评论。
+      '
 photos:
   label: 图库设置
   items:
+    open_photos:
+      name: open_photos
+      label: 是否显示图库
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 显示
+        - value: false
+          label: 关闭
     photoTitle:
       name: photoTitle
       label: 标题
       type: text
     photodes:
       name: photodes
-      label: 简述
+      label: 短语
       type: textarea

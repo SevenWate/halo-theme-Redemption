@@ -54,9 +54,11 @@
             <a href="${blog_url!}" >
                 退回首页
             </a>
-            <a href="javascript:document.getElementById('comment').classList.remove('close')">
-                留下一言
-            </a>
+            <#if settings.open_comment!false>
+                <a href="javascript:document.getElementById('comment').classList.remove('close')">
+                    留下一言
+                </a>
+            </#if>
         </div>
     </main>
     <#include "module/comment.ftl"> 

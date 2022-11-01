@@ -28,10 +28,14 @@
             <#-- 脚注   -->
             <footer>
                 <div class="copyright">
+                    <#if settings.open_foreverblog!true>
                     <a href="https://www.foreverblog.cn/" target="_blank" > 
                         <img src="${theme_base!}/source/images/logo_en_default.png" alt="" style="width:auto;height:1.25rem;"> 
                     </a>
-                    <a href="https://halo.run">Designed by 7Wate . Proudly published with Halo</a>
+                    </#if>
+                    <#if settings.footer_title??>
+                        <a href="https://halo.run">${settings.footer_title}</a>
+                    </#if>
                     <@global.footer />
                 </div>
             </footer>

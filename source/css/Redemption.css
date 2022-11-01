@@ -337,7 +337,14 @@ footer .copyright a:hover {
     margin: 5% 0;
   }
 }
-@media (min-width: 870px) {
+@media (min-width: 870px) and (max-width: 1440px) {
+  .comment {
+    width: 71.8vw;
+    margin-top: 18.48vh;
+    padding-bottom: 7vh;
+  }
+}
+@media (min-width: 1440px) {
   .comment {
     margin-top: 2rem;
     width: 61.8vw;

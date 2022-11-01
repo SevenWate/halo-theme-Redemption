@@ -7,8 +7,15 @@
         margin: 5% 0;
     }
 
+    // =========== 适配端 ===========
+    @media (min-width: 870px) and (max-width: 1440px) {
+        width: 71.8vw;
+        margin-top: 18.48vh;
+        padding-bottom: 7vh;
+    }
+
     // =========== 桌面端 ===========
-    @media (min-width: 870px){
+    @media (min-width: 1440px){
         margin-top: 2rem;
         width: 61.8vw;
     }
