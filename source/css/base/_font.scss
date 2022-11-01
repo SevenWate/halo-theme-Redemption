@@ -13,9 +13,18 @@ html {
         font-weight: 500;
     }
 
-    // =========== 桌面端 ===========
-    @media (min-width: 870px) and (max-width: 1920px) {
+    // =========== 适配端 ===========
+    @media (min-width: 870px) and (max-width: 1440px) {
         font-size: 20px;
+        font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+        font-weight: 500;
+    }
+
+    // =========== 桌面端 ===========
+    @media (min-width: 1440px) and (max-width: 1920px) {
+        font-size: 22px;
         font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
         'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
@@ -24,7 +33,7 @@ html {
 
     // =========== 2K端 ===========
     @media (min-width: 1920px) and (max-width: 2560px) {
-        font-size: 22px;
+        font-size: 1.2vw;
         font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
         'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
@@ -33,7 +42,7 @@ html {
 
     // =========== 4K端 ===========
     @media (min-width: 2560px) and (max-width: 2880px) {
-        font-size: 24px;
+        font-size: 1.25vw;
         font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
         'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
@@ -42,7 +51,7 @@ html {
 
     // =========== >4K端 ===========
     @media (min-width: 2880px) {
-        font-size: 2vh;
+        font-size: 1.27vw;
         font-family: -apple-system, BlinksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
         'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
