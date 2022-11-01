@@ -8,7 +8,7 @@ Redemption 一款专注阅读、写作的主题。
 
 ![预览](screenshot.png)
 
-![预览](\source\images\index.gif)
+![预览](source/images/index.gif)
 
 ## 功能
 

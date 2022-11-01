@@ -8,5 +8,5 @@ description: The road of Redemption | 救赎之路
 logo: 
 website: https://7wate.com
 repo: https://github.com/7Wate/Redemption
-version: 1.0.0
-require: 1.5.4
+version: 1.0.1
+require: 1.5.0
